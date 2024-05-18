@@ -1,0 +1,48 @@
+-- begin_signature
+-- convolution_coprocessor_simple_rom_sv(DATA_WIDTH
+-- 8
+-- ADDR_WIDTH
+-- 5
+-- TXT_FILE
+-- "/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/sw/MemoryH.txt")
+-- end_signature
+WIDTH=8;
+DEPTH=32;
+
+ADDRESS_RADIX=UNS;
+DATA_RADIX=BIN;
+
+CONTENT BEGIN
+	31 :	XXXXXXXX;
+	30 :	XXXXXXXX;
+	29 :	XXXXXXXX;
+	28 :	XXXXXXXX;
+	27 :	XXXXXXXX;
+	26 :	XXXXXXXX;
+	25 :	XXXXXXXX;
+	24 :	XXXXXXXX;
+	23 :	XXXXXXXX;
+	22 :	XXXXXXXX;
+	21 :	XXXXXXXX;
+	20 :	XXXXXXXX;
+	19 :	XXXXXXXX;
+	18 :	XXXXXXXX;
+	17 :	XXXXXXXX;
+	16 :	XXXXXXXX;
+	15 :	XXXXXXXX;
+	14 :	XXXXXXXX;
+	13 :	XXXXXXXX;
+	12 :	XXXXXXXX;
+	11 :	XXXXXXXX;
+	10 :	XXXXXXXX;
+	9 :	XXXXXXXX;
+	8 :	XXXXXXXX;
+	7 :	XXXXXXXX;
+	6 :	XXXXXXXX;
+	5 :	XXXXXXXX;
+	4 :	00101000;
+	3 :	00110000;
+	2 :	00011101;
+	1 :	00101100;
+	0 :	00100101;
+END;

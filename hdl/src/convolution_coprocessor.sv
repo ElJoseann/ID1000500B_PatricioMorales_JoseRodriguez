@@ -10,7 +10,7 @@
 * Date  : 05/02/2024	
 ******************************************************************/
 
-module convolution_coprocessor (
+module ipm_ID1000500B_convolution_coprocessor (
 	/********* Ctrl inputs **********/
 	input logic  	    clk,
 	input logic        rstn,
@@ -27,7 +27,7 @@ module convolution_coprocessor (
 	output logic		  done
 );
 
-`define SIZE_MEM_H 5'd10
+`define SIZE_MEM_H 5'd5
 
 // Parameter definitios
 parameter DATA_WIDTH_MEMH = 8;
@@ -263,7 +263,7 @@ convolution_coprocessor_and indexH(
 convolution_coprocessor_simple_rom_sv
 #(.DATA_WIDTH(DATA_WIDTH_MEMH),
   .ADDR_WIDTH(ADDR_WIDTH_MEMH),
-  .TXT_FILE("C:/Users/Jos/Documents/CCpp/convolution/MemoryH.txt")
+  .TXT_FILE("/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/sw/MemoryH.txt")
 ) memoryH (
 	.clk(clk),
 	.read_addr_i(memH_addr),
