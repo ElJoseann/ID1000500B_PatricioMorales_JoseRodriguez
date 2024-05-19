@@ -122,7 +122,7 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : AA12      :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : AA13      :        :                   :         : 3B        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AA14      :        :                   :         : 3B        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AA15      :        :                   :         : 3B        :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AA16      :        :                   :         : 4A        :                
+clk                          : AA16      : input  : 3.3-V LVCMOS      :         : 4A        : Y              
 VCCIO4A                      : AA17      : power  :                   : 3.3V    : 4A        :                
 addressMCU[3]                : AA18      : input  : 3.3-V LVCMOS      :         : 4A        : Y              
 dataMCU[3]                   : AA19      : bidir  : 3.3-V LVCMOS      :         : 4A        : Y              
@@ -270,7 +270,7 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : AF10      :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : AF11      :        :                   :         : 3B        :                
 GND                          : AF12      : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AF13      :        :                   :         : 3B        :                
-clk                          : AF14      : input  : 3.3-V LVCMOS      :         : 3B        : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AF14      :        :                   :         : 3B        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AF15      :        :                   :         : 3B        :                
 addressMCU[2]                : AF16      : input  : 3.3-V LVCMOS      :         : 4A        : Y              
 GND                          : AF17      : gnd    :                   :         :           :                
