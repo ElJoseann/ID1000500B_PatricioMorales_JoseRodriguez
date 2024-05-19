@@ -1,23 +1,365 @@
 Info: Start Nativelink Simulation process
-Info: NativeLink has detected Verilog design -- Verilog simulation models will be used
 
 ========= EDA Simulation Settings =====================
 
-Sim Mode              :  RTL
+Sim Mode              :  Gate
 Family                :  max10
 Quartus root          :  /home/joserodriguez/intelFPGA_lite/20.1/quartus/linux64/
 Quartus sim root      :  /home/joserodriguez/intelFPGA_lite/20.1/quartus/eda/sim_lib
 Simulation Tool       :  modelsim-altera
-Simulation Language   :  verilog
+Simulation Language   :  systemverilog
 Simulation Mode       :  GUI
-Sim Output File       :  
-Sim SDF file          :  
+Sim Output File       :  ipm_ID1000500B_convolution_coprocessor.svo
+Sim SDF file          :  ipm_ID1000500B_convolution_coprocessor__verilog.sdo
 Sim dir               :  simulation/modelsim
 
 =======================================================
 
 Info: Starting NativeLink simulation with ModelSim-Altera software
 Sourced NativeLink script /home/joserodriguez/intelFPGA_lite/20.1/quartus/common/tcl/internal/nativelink/modelsim.tcl
-Warning: File ipm_ID1000500B_convolution_coprocessor_run_msim_rtl_verilog.do already exists - backing up current file as ipm_ID1000500B_convolution_coprocessor_run_msim_rtl_verilog.do.bak7
-Info: Spawning ModelSim-Altera Simulation software 
+Warning: File ipm_ID1000500B_convolution_coprocessor_run_msim_gate_systemverilog.do already exists - backing up current file as ipm_ID1000500B_convolution_coprocessor_run_msim_gate_systemverilog.do.bak6
+Probing transcript
+ModelSim-Altera Info: # ERROR: No extended dataflow license exists
+ModelSim-Altera Info: # do ipm_ID1000500B_convolution_coprocessor_run_msim_gate_systemverilog.do
+ModelSim-Altera Info: # if {[file exists gate_work]} {
+ModelSim-Altera Info: # 	vdel -lib gate_work -all
+ModelSim-Altera Info: # }
+ModelSim-Altera Info: # vlib gate_work
+ModelSim-Altera Info: # vmap work gate_work
+ModelSim-Altera Info: # Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+ModelSim-Altera Info: # vmap work gate_work 
+ModelSim-Altera Info: # Copying /home/joserodriguez/intelFPGA_lite/20.1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
+ModelSim-Altera Info: # Modifying modelsim.ini
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # vlog -sv -work work +incdir+. {ipm_ID1000500B_convolution_coprocessor.svo}
+ModelSim-Altera Info: # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+ModelSim-Altera Info: # Start time: 23:03:00 on May 18,2024
+ModelSim-Altera Info: # vlog -reportprogress 300 -sv -work work "+incdir+." ipm_ID1000500B_convolution_coprocessor.svo 
+ModelSim-Altera Info: # -- Compiling module ipm_ID1000500B_convolution_coprocessor
+ModelSim-Altera Info: # -- Compiling module hard_block
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # Top level modules:
+ModelSim-Altera Info: # 	ipm_ID1000500B_convolution_coprocessor
+ModelSim-Altera Info: # End time: 23:03:00 on May 18,2024, Elapsed time: 0:00:00
+ModelSim-Altera Info: # Errors: 0, Warnings: 0
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # vlog -vlog01compat -work work +incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../simulation {/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../simulation/ID1000500BTB.v}
+ModelSim-Altera Info: # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+ModelSim-Altera Info: # Start time: 23:03:00 on May 18,2024
+ModelSim-Altera Info: # vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../simulation" /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../simulation/ID1000500BTB.v 
+ModelSim-Altera Info: # -- Compiling module ID1000500BTB
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # Top level modules:
+ModelSim-Altera Info: # 	ID1000500BTB
+ModelSim-Altera Info: # End time: 23:03:00 on May 18,2024, Elapsed time: 0:00:00
+ModelSim-Altera Info: # Errors: 0, Warnings: 0
+ModelSim-Altera Info: # vlog -sv -work work +incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../src {/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../src/convolution_coprocessor.sv}
+ModelSim-Altera Info: # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+ModelSim-Altera Info: # Start time: 23:03:00 on May 18,2024
+ModelSim-Altera Info: # vlog -reportprogress 300 -sv -work work "+incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../src" /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../src/convolution_coprocessor.sv 
+ModelSim-Altera Info: # -- Compiling module ID1000500B_convolution_coprocessor_core
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # Top level modules:
+ModelSim-Altera Info: # 	ID1000500B_convolution_coprocessor_core
+ModelSim-Altera Info: # End time: 23:03:00 on May 18,2024, Elapsed time: 0:00:00
+ModelSim-Altera Info: # Errors: 0, Warnings: 0
+ModelSim-Altera Info: # vlog -sv -work work +incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../src {/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../src/convolution_coprocessor_and.sv}
+ModelSim-Altera Info: # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+ModelSim-Altera Info: # Start time: 23:03:00 on May 18,2024
+ModelSim-Altera Info: # vlog -reportprogress 300 -sv -work work "+incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../src" /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../src/convolution_coprocessor_and.sv 
+ModelSim-Altera Info: # -- Compiling module convolution_coprocessor_and
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # Top level modules:
+ModelSim-Altera Info: # 	convolution_coprocessor_and
+ModelSim-Altera Info: # End time: 23:03:00 on May 18,2024, Elapsed time: 0:00:00
+ModelSim-Altera Info: # Errors: 0, Warnings: 0
+ModelSim-Altera Info: # vlog -sv -work work +incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../src {/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../src/convolution_coprocessor_fsm.sv}
+ModelSim-Altera Info: # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+ModelSim-Altera Info: # Start time: 23:03:00 on May 18,2024
+ModelSim-Altera Info: # vlog -reportprogress 300 -sv -work work "+incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../src" /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../src/convolution_coprocessor_fsm.sv 
+ModelSim-Altera Info: # -- Compiling module convolution_coprocessor_fsm
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # Top level modules:
+ModelSim-Altera Info: # 	convolution_coprocessor_fsm
+ModelSim-Altera Info: # End time: 23:03:00 on May 18,2024, Elapsed time: 0:00:00
+ModelSim-Altera Info: # Errors: 0, Warnings: 0
+ModelSim-Altera Info: # vlog -sv -work work +incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../src {/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../src/convolution_coprocessor_mult.sv}
+ModelSim-Altera Info: # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+ModelSim-Altera Info: # Start time: 23:03:00 on May 18,2024
+ModelSim-Altera Info: # vlog -reportprogress 300 -sv -work work "+incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../src" /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../src/convolution_coprocessor_mult.sv 
+ModelSim-Altera Info: # -- Compiling module convolution_coprocessor_mult
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # Top level modules:
+ModelSim-Altera Info: # 	convolution_coprocessor_mult
+ModelSim-Altera Info: # End time: 23:03:00 on May 18,2024, Elapsed time: 0:00:00
+ModelSim-Altera Info: # Errors: 0, Warnings: 0
+ModelSim-Altera Info: # vlog -sv -work work +incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../src {/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../src/convolution_coprocessor_mux.sv}
+ModelSim-Altera Info: # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+ModelSim-Altera Info: # Start time: 23:03:00 on May 18,2024
+ModelSim-Altera Info: # vlog -reportprogress 300 -sv -work work "+incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../src" /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../src/convolution_coprocessor_mux.sv 
+ModelSim-Altera Info: # -- Compiling module convolution_coprocessor_mux
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # Top level modules:
+ModelSim-Altera Info: # 	convolution_coprocessor_mux
+ModelSim-Altera Info: # End time: 23:03:00 on May 18,2024, Elapsed time: 0:00:00
+ModelSim-Altera Info: # Errors: 0, Warnings: 0
+ModelSim-Altera Info: # vlog -sv -work work +incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../src {/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../src/convolution_coprocessor_not.sv}
+ModelSim-Altera Info: # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+ModelSim-Altera Info: # Start time: 23:03:00 on May 18,2024
+ModelSim-Altera Info: # vlog -reportprogress 300 -sv -work work "+incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../src" /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../src/convolution_coprocessor_not.sv 
+ModelSim-Altera Info: # -- Compiling module convolution_coprocessor_not
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # Top level modules:
+ModelSim-Altera Info: # 	convolution_coprocessor_not
+ModelSim-Altera Info: # End time: 23:03:00 on May 18,2024, Elapsed time: 0:00:00
+ModelSim-Altera Info: # Errors: 0, Warnings: 0
+ModelSim-Altera Info: # vlog -sv -work work +incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../src {/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../src/convolution_coprocessor_substractor.sv}
+ModelSim-Altera Info: # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+ModelSim-Altera Info: # Start time: 23:03:00 on May 18,2024
+ModelSim-Altera Info: # vlog -reportprogress 300 -sv -work work "+incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../src" /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../src/convolution_coprocessor_substractor.sv 
+ModelSim-Altera Info: # -- Compiling module convolution_coprocessor_substractor
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # Top level modules:
+ModelSim-Altera Info: # 	convolution_coprocessor_substractor
+ModelSim-Altera Info: # End time: 23:03:00 on May 18,2024, Elapsed time: 0:00:00
+ModelSim-Altera Info: # Errors: 0, Warnings: 0
+ModelSim-Altera Info: # vlog -vlog01compat -work work +incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../src {/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../src/ID1000500B_aip.v}
+ModelSim-Altera Info: # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+ModelSim-Altera Info: # Start time: 23:03:00 on May 18,2024
+ModelSim-Altera Info: # vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../src" /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../src/ID1000500B_aip.v 
+ModelSim-Altera Info: # -- Compiling module ID1000500B_aip
+ModelSim-Altera Info: # -- Compiling module ID1000500B_aipModules
+ModelSim-Altera Info: # -- Compiling module ID1000500B_aipCtrl
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # Top level modules:
+ModelSim-Altera Info: # 	ID1000500B_aip
+ModelSim-Altera Info: # End time: 23:03:00 on May 18,2024, Elapsed time: 0:00:00
+ModelSim-Altera Info: # Errors: 0, Warnings: 0
+ModelSim-Altera Info: # vlog -vlog01compat -work work +incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../src {/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../src/ID1000500B_convolution_coprocessor.v}
+ModelSim-Altera Info: # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+ModelSim-Altera Info: # Start time: 23:03:00 on May 18,2024
+ModelSim-Altera Info: # vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../src" /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../src/ID1000500B_convolution_coprocessor.v 
+ModelSim-Altera Info: # -- Compiling module ID1000500B_convolution_coprocessor
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # Top level modules:
+ModelSim-Altera Info: # 	ID1000500B_convolution_coprocessor
+ModelSim-Altera Info: # End time: 23:03:00 on May 18,2024, Elapsed time: 0:00:00
+ModelSim-Altera Info: # Errors: 0, Warnings: 0
+ModelSim-Altera Info: # vlog -sv -work work +incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../src {/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../src/ID1000500B_convolution_coprocessor_core.sv}
+ModelSim-Altera Info: # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+ModelSim-Altera Info: # Start time: 23:03:00 on May 18,2024
+ModelSim-Altera Info: # vlog -reportprogress 300 -sv -work work "+incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../src" /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../src/ID1000500B_convolution_coprocessor_core.sv 
+ModelSim-Altera Info: # -- Compiling module ID1000500B_convolution_coprocessor_core
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # Top level modules:
+ModelSim-Altera Info: # 	ID1000500B_convolution_coprocessor_core
+ModelSim-Altera Info: # End time: 23:03:00 on May 18,2024, Elapsed time: 0:00:00
+ModelSim-Altera Info: # Errors: 0, Warnings: 0
+ModelSim-Altera Info: # vlog -vlog01compat -work work +incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../src {/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../src/ipm_ID1000500B_convolution_coprocessor.v}
+ModelSim-Altera Info: # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+ModelSim-Altera Info: # Start time: 23:03:00 on May 18,2024
+ModelSim-Altera Info: # vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../src" /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../src/ipm_ID1000500B_convolution_coprocessor.v 
+ModelSim-Altera Info: # -- Compiling module ipm_ID1000500B_convolution_coprocessor
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # Top level modules:
+ModelSim-Altera Info: # 	ipm_ID1000500B_convolution_coprocessor
+ModelSim-Altera Info: # End time: 23:03:00 on May 18,2024, Elapsed time: 0:00:00
+ModelSim-Altera Info: # Errors: 0, Warnings: 0
+ModelSim-Altera Info: # vlog -sv -work work +incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../../../basicblocks/arithmetic {/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../../../basicblocks/arithmetic/convolution_coprocessor_comparatorLessThan.sv}
+ModelSim-Altera Info: # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+ModelSim-Altera Info: # Start time: 23:03:00 on May 18,2024
+ModelSim-Altera Info: # vlog -reportprogress 300 -sv -work work "+incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../../../basicblocks/arithmetic" /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../../../basicblocks/arithmetic/convolution_coprocessor_comparatorLessThan.sv 
+ModelSim-Altera Info: # -- Compiling module convolution_coprocessor_comparatorLessThan
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # Top level modules:
+ModelSim-Altera Info: # 	convolution_coprocessor_comparatorLessThan
+ModelSim-Altera Info: # End time: 23:03:01 on May 18,2024, Elapsed time: 0:00:01
+ModelSim-Altera Info: # Errors: 0, Warnings: 0
+ModelSim-Altera Info: # vlog -vlog01compat -work work +incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../../../basicblocks/arithmetic {/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../../../basicblocks/arithmetic/convolution_coprocessor_realAdder.v}
+ModelSim-Altera Info: # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+ModelSim-Altera Info: # Start time: 23:03:01 on May 18,2024
+ModelSim-Altera Info: # vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../../../basicblocks/arithmetic" /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../../../basicblocks/arithmetic/convolution_coprocessor_realAdder.v 
+ModelSim-Altera Info: # -- Compiling module convolution_coprocessor_realAdder
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # Top level modules:
+ModelSim-Altera Info: # 	convolution_coprocessor_realAdder
+ModelSim-Altera Info: # End time: 23:03:01 on May 18,2024, Elapsed time: 0:00:00
+ModelSim-Altera Info: # Errors: 0, Warnings: 0
+ModelSim-Altera Info: # vlog -vlog01compat -work work +incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../../../basicblocks/ipm {/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../../../basicblocks/ipm/ipm.v}
+ModelSim-Altera Info: # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+ModelSim-Altera Info: # Start time: 23:03:01 on May 18,2024
+ModelSim-Altera Info: # vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../../../basicblocks/ipm" /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../../../basicblocks/ipm/ipm.v 
+ModelSim-Altera Info: # -- Compiling module ipm
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # Top level modules:
+ModelSim-Altera Info: # 	ipm
+ModelSim-Altera Info: # End time: 23:03:01 on May 18,2024, Elapsed time: 0:00:00
+ModelSim-Altera Info: # Errors: 0, Warnings: 0
+ModelSim-Altera Info: # vlog -vlog01compat -work work +incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../../../basicblocks/ipm {/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../../../basicblocks/ipm/ipm_register.v}
+ModelSim-Altera Info: # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+ModelSim-Altera Info: # Start time: 23:03:01 on May 18,2024
+ModelSim-Altera Info: # vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../../../basicblocks/ipm" /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../../../basicblocks/ipm/ipm_register.v 
+ModelSim-Altera Info: # -- Compiling module ipm_register
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # Top level modules:
+ModelSim-Altera Info: # 	ipm_register
+ModelSim-Altera Info: # End time: 23:03:01 on May 18,2024, Elapsed time: 0:00:00
+ModelSim-Altera Info: # Errors: 0, Warnings: 0
+ModelSim-Altera Info: # vlog -sv -work work +incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../../../basicblocks/memories {/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../../../basicblocks/memories/convolution_coprocessor_simple_rom_sv.sv}
+ModelSim-Altera Info: # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+ModelSim-Altera Info: # Start time: 23:03:01 on May 18,2024
+ModelSim-Altera Info: # vlog -reportprogress 300 -sv -work work "+incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../../../basicblocks/memories" /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../../../basicblocks/memories/convolution_coprocessor_simple_rom_sv.sv 
+ModelSim-Altera Info: # -- Compiling module convolution_coprocessor_simple_rom_sv
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # Top level modules:
+ModelSim-Altera Info: # 	convolution_coprocessor_simple_rom_sv
+ModelSim-Altera Info: # End time: 23:03:01 on May 18,2024, Elapsed time: 0:00:00
+ModelSim-Altera Info: # Errors: 0, Warnings: 0
+ModelSim-Altera Info: # vlog -vlog01compat -work work +incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../../../basicblocks/memories {/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../../../basicblocks/memories/simple_dual_port_ram_single_clk.v}
+ModelSim-Altera Info: # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+ModelSim-Altera Info: # Start time: 23:03:01 on May 18,2024
+ModelSim-Altera Info: # vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../../../basicblocks/memories" /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../../../basicblocks/memories/simple_dual_port_ram_single_clk.v 
+ModelSim-Altera Info: # -- Compiling module simple_dual_port_ram_single_clk
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # Top level modules:
+ModelSim-Altera Info: # 	simple_dual_port_ram_single_clk
+ModelSim-Altera Info: # End time: 23:03:01 on May 18,2024, Elapsed time: 0:00:00
+ModelSim-Altera Info: # Errors: 0, Warnings: 0
+ModelSim-Altera Info: # vlog -vlog01compat -work work +incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../../../basicblocks/sequential {/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../../../basicblocks/sequential/convolution_coprocessor_register.v}
+ModelSim-Altera Info: # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+ModelSim-Altera Info: # Start time: 23:03:01 on May 18,2024
+ModelSim-Altera Info: # vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../../../basicblocks/sequential" /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../../../basicblocks/sequential/convolution_coprocessor_register.v 
+ModelSim-Altera Info: # -- Compiling module convolution_coprocessor_register
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # Top level modules:
+ModelSim-Altera Info: # 	convolution_coprocessor_register
+ModelSim-Altera Info: # End time: 23:03:01 on May 18,2024, Elapsed time: 0:00:00
+ModelSim-Altera Info: # Errors: 0, Warnings: 0
+ModelSim-Altera Info: # vlog -vlog01compat -work work +incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../../../basicblocks/aip {/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../../../basicblocks/aip/aipModules.v}
+ModelSim-Altera Info: # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+ModelSim-Altera Info: # Start time: 23:03:01 on May 18,2024
+ModelSim-Altera Info: # vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../../../basicblocks/aip" /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../../../basicblocks/aip/aipModules.v 
+ModelSim-Altera Info: # -- Compiling module aipStatus
+ModelSim-Altera Info: # -- Compiling module aipParametricMux
+ModelSim-Altera Info: # -- Compiling module aipId
+ModelSim-Altera Info: # -- Compiling module aipConfigurationRegister
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # Top level modules:
+ModelSim-Altera Info: # 	aipStatus
+ModelSim-Altera Info: # 	aipParametricMux
+ModelSim-Altera Info: # 	aipId
+ModelSim-Altera Info: # 	aipConfigurationRegister
+ModelSim-Altera Info: # End time: 23:03:01 on May 18,2024, Elapsed time: 0:00:00
+ModelSim-Altera Info: # Errors: 0, Warnings: 0
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L gate_work -L work -voptargs="+acc"  ID1000500BTB
+ModelSim-Altera Info: # vsim -t 1ps "+transport_int_delays" "+transport_path_delays" -L altera_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L gate_work -L work -voptargs=""+acc"" ID1000500BTB 
+ModelSim-Altera Info: # Start time: 23:03:01 on May 18,2024
+ModelSim-Altera Info: # Loading work.ID1000500BTB
+ModelSim-Altera Info: # Loading work.ID1000500B_convolution_coprocessor
+ModelSim-Altera Info: # Loading work.ID1000500B_aip
+ModelSim-Altera Info: # Loading work.ID1000500B_aipModules
+ModelSim-Altera Info: # Loading work.aipConfigurationRegister
+ModelSim-Altera Info: # Loading work.ID1000500B_aipCtrl
+ModelSim-Altera Info: # Loading work.aipParametricMux
+ModelSim-Altera Info: # Loading work.aipId
+ModelSim-Altera Info: # Loading work.aipStatus
+ModelSim-Altera Info: # Loading sv_std.std
+ModelSim-Altera Info: # Loading work.ID1000500B_convolution_coprocessor_core
+ModelSim-Altera Info: # Loading work.convolution_coprocessor_fsm
+ModelSim-Altera Info: # Loading work.convolution_coprocessor_realAdder
+ModelSim-Altera Info: # Loading work.convolution_coprocessor_mux
+ModelSim-Altera Info: # Loading work.convolution_coprocessor_register
+ModelSim-Altera Info: # Loading work.convolution_coprocessor_substractor
+ModelSim-Altera Info: # Loading work.convolution_coprocessor_comparatorLessThan
+ModelSim-Altera Info: # Loading work.convolution_coprocessor_not
+ModelSim-Altera Info: # Loading work.convolution_coprocessor_and
+ModelSim-Altera Info: # Loading work.convolution_coprocessor_simple_rom_sv
+ModelSim-Altera Info: # Loading work.convolution_coprocessor_mult
+ModelSim-Altera Info: # Loading work.simple_dual_port_ram_single_clk
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # add wave *
+ModelSim-Altera Info: # view structure
+ModelSim-Altera Info: # .main_pane.structure.interior.cs.body.struct
+ModelSim-Altera Info: # view signals
+ModelSim-Altera Info: # .main_pane.objects.interior.cs.body.tree
+ModelSim-Altera Info: # run 10 us
+ModelSim-Altera Info: #                    0 << Start Simulation >>
+ModelSim-Altera Info: #  100000 Read ID 1000500b
+ModelSim-Altera Info: #  160000 Read STATUS 00000000
+ModelSim-Altera Info: #  700000 Sending start
+ModelSim-Altera Info: # 4140000 Done flag detected!
+ModelSim-Altera Info: # 4200000 Read STATUS 00010001
+ModelSim-Altera Info: # 4380000 Read STATUS 00010000
+ModelSim-Altera Info: # 		I 		O 		Result
+ModelSim-Altera Info: # Read data  0 	00000000 	zzzz0000 	ERROR
+ModelSim-Altera Info: # Read data  1 	00000001 	zzzz0004 	ERROR
+ModelSim-Altera Info: # Read data  2 	00000002 	zzzz0038 	ERROR
+ModelSim-Altera Info: # Read data  3 	00000003 	zzzz007f 	ERROR
+ModelSim-Altera Info: # Read data  4 	00000004 	zzzz00d0 	ERROR
+ModelSim-Altera Info: # Read data  5 	00000005 	zzzz0147 	ERROR
+ModelSim-Altera Info: # Read data  6 	00000006 	zzzz01be 	ERROR
+ModelSim-Altera Info: # Read data  7 	00000007 	zzzz0235 	ERROR
+ModelSim-Altera Info: # Read data  8 	00000008 	zzzz02ac 	ERROR
+ModelSim-Altera Info: # Read data  9 	00000009 	zzzz0323 	ERROR
+ModelSim-Altera Info: # Read data 10 	xxxxxxxx 	zzzz0372 	ERROR
+ModelSim-Altera Info: # Read data 11 	xxxxxxxx 	zzzz0205 	ERROR
+ModelSim-Altera Info: # Read data 12 	xxxxxxxx 	zzzz018a 	ERROR
+ModelSim-Altera Info: # Read data 13 	xxxxxxxx 	zzzz0156 	ERROR
+ModelSim-Altera Info: # Read data 14 	xxxxxxxx 	xxxxxxxx 	   OK
+ModelSim-Altera Info: # Read data 15 	xxxxxxxx 	xxxxxxxx 	   OK
+ModelSim-Altera Info: # Read data 16 	xxxxxxxx 	xxxxxxxx 	   OK
+ModelSim-Altera Info: # Read data 17 	xxxxxxxx 	xxxxxxxx 	   OK
+ModelSim-Altera Info: # Read data 18 	xxxxxxxx 	xxxxxxxx 	   OK
+ModelSim-Altera Info: # Read data 19 	xxxxxxxx 	xxxxxxxx 	   OK
+ModelSim-Altera Info: # Read data 20 	xxxxxxxx 	xxxxxxxx 	   OK
+ModelSim-Altera Info: # Read data 21 	xxxxxxxx 	xxxxxxxx 	   OK
+ModelSim-Altera Info: # Read data 22 	xxxxxxxx 	xxxxxxxx 	   OK
+ModelSim-Altera Info: # Read data 23 	xxxxxxxx 	xxxxxxxx 	   OK
+ModelSim-Altera Info: # Read data 24 	xxxxxxxx 	xxxxxxxx 	   OK
+ModelSim-Altera Info: # Read data 25 	xxxxxxxx 	xxxxxxxx 	   OK
+ModelSim-Altera Info: # Read data 26 	xxxxxxxx 	xxxxxxxx 	   OK
+ModelSim-Altera Info: # Read data 27 	xxxxxxxx 	xxxxxxxx 	   OK
+ModelSim-Altera Info: # Read data 28 	xxxxxxxx 	xxxxxxxx 	   OK
+ModelSim-Altera Info: # Read data 29 	xxxxxxxx 	xxxxxxxx 	   OK
+ModelSim-Altera Info: # Read data 30 	xxxxxxxx 	xxxxxxxx 	   OK
+ModelSim-Altera Info: # Read data 31 	xxxxxxxx 	xxxxxxxx 	   OK
+ModelSim-Altera Info: # Read data 32 	xxxxxxxx 	xxxxxxxx 	   OK
+ModelSim-Altera Info: # Read data 33 	xxxxxxxx 	xxxxxxxx 	   OK
+ModelSim-Altera Info: # Read data 34 	xxxxxxxx 	xxxxxxxx 	   OK
+ModelSim-Altera Info: # Read data 35 	xxxxxxxx 	xxxxxxxx 	   OK
+ModelSim-Altera Info: # Read data 36 	xxxxxxxx 	xxxxxxxx 	   OK
+ModelSim-Altera Info: # Read data 37 	xxxxxxxx 	xxxxxxxx 	   OK
+ModelSim-Altera Info: # Read data 38 	xxxxxxxx 	xxxxxxxx 	   OK
+ModelSim-Altera Info: # Read data 39 	xxxxxxxx 	xxxxxxxx 	   OK
+ModelSim-Altera Info: # Read data 40 	xxxxxxxx 	xxxxxxxx 	   OK
+ModelSim-Altera Info: # Read data 41 	xxxxxxxx 	xxxxxxxx 	   OK
+ModelSim-Altera Info: # Read data 42 	xxxxxxxx 	xxxxxxxx 	   OK
+ModelSim-Altera Info: # Read data 43 	xxxxxxxx 	xxxxxxxx 	   OK
+ModelSim-Altera Info: # Read data 44 	xxxxxxxx 	xxxxxxxx 	   OK
+ModelSim-Altera Info: # Read data 45 	xxxxxxxx 	xxxxxxxx 	   OK
+ModelSim-Altera Info: # Read data 46 	xxxxxxxx 	xxxxxxxx 	   OK
+ModelSim-Altera Info: # Read data 47 	xxxxxxxx 	xxxxxxxx 	   OK
+ModelSim-Altera Info: # Read data 48 	xxxxxxxx 	xxxxxxxx 	   OK
+ModelSim-Altera Info: # Read data 49 	xxxxxxxx 	xxxxxxxx 	   OK
+ModelSim-Altera Info: # Read data 50 	xxxxxxxx 	xxxxxxxx 	   OK
+ModelSim-Altera Info: # Read data 51 	xxxxxxxx 	xxxxxxxx 	   OK
+ModelSim-Altera Info: # Read data 52 	xxxxxxxx 	xxxxxxxx 	   OK
+ModelSim-Altera Info: # Read data 53 	xxxxxxxx 	xxxxxxxx 	   OK
+ModelSim-Altera Info: # Read data 54 	xxxxxxxx 	xxxxxxxx 	   OK
+ModelSim-Altera Info: # Read data 55 	xxxxxxxx 	xxxxxxxx 	   OK
+ModelSim-Altera Info: # Read data 56 	xxxxxxxx 	xxxxxxxx 	   OK
+ModelSim-Altera Info: # Read data 57 	xxxxxxxx 	xxxxxxxx 	   OK
+ModelSim-Altera Info: # Read data 58 	xxxxxxxx 	xxxxxxxx 	   OK
+ModelSim-Altera Info: # Read data 59 	xxxxxxxx 	xxxxxxxx 	   OK
+ModelSim-Altera Info: # Read data 60 	xxxxxxxx 	xxxxxxxx 	   OK
+ModelSim-Altera Info: # Read data 61 	xxxxxxxx 	xxxxxxxx 	   OK
+ModelSim-Altera Info: # Read data 62 	xxxxxxxx 	xxxxxxxx 	   OK
+ModelSim-Altera Info: # Read data 63 	xxxxxxxx 	xxxxxxxx 	   OK
+ModelSim-Altera Info: #                 6180 << End Simulation >>
+ModelSim-Altera Info: # ** Note: $stop    : /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../simulation/ID1000500BTB.v(73)
+ModelSim-Altera Info: #    Time: 6180 ns  Iteration: 0  Instance: /ID1000500BTB
+ModelSim-Altera Info: # Break in Module ID1000500BTB at /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../simulation/ID1000500BTB.v line 73
+ModelSim-Altera Info: # End time: 23:03:23 on May 18,2024, Elapsed time: 0:00:22
+ModelSim-Altera Info: # Errors: 0, Warnings: 0
 Info: NativeLink simulation flow was successful

@@ -1,5 +1,5 @@
 Flow report for ipm_ID1000500B_convolution_coprocessor
-Sat May 18 21:58:53 2024
+Sat May 18 23:02:55 2024
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Sat May 18 21:58:53 2024       ;
+; Flow Status                        ; Successful - Sat May 18 23:02:55 2024       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; ipm_ID1000500B_convolution_coprocessor      ;
 ; Top-level Entity Name              ; ipm_ID1000500B_convolution_coprocessor      ;
@@ -67,41 +67,65 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+----------------------------------------+
 ; Option            ; Setting                                ;
 +-------------------+----------------------------------------+
-; Start date & time ; 05/18/2024 21:58:26                    ;
+; Start date & time ; 05/18/2024 23:02:28                    ;
 ; Main task         ; Compilation                            ;
 ; Revision Name     ; ipm_ID1000500B_convolution_coprocessor ;
 +-------------------+----------------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                                                ;
-+--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
-+--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID                ; 141361125699565.171609110629769        ; --            ; --          ; --                                ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; ID1000500BTB                      ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_signal_integrity ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_symbol           ;
-; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; ID1000500BTB                           ; --            ; --          ; eda_simulation                    ;
-; EDA_OUTPUT_DATA_FORMAT               ; Systemverilog Hdl                      ; --            ; --          ; eda_simulation                    ;
-; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (SystemVerilog)        ; <None>        ; --          ; --                                ;
-; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                        ; --            ; --          ; eda_simulation                    ;
-; EDA_TEST_BENCH_FILE                  ; ../simulation/ID1000500BTB.v           ; --            ; --          ; ID1000500BTB                      ;
-; EDA_TEST_BENCH_MODULE_NAME           ; ID1000500BTB                           ; --            ; --          ; ID1000500BTB                      ;
-; EDA_TEST_BENCH_NAME                  ; ID1000500BTB                           ; --            ; --          ; eda_simulation                    ;
-; EDA_TEST_BENCH_RUN_SIM_FOR           ; 10 us                                  ; --            ; --          ; ID1000500BTB                      ;
-; EDA_TIME_SCALE                       ; 1 ps                                   ; --            ; --          ; eda_simulation                    ;
-; MAX_CORE_JUNCTION_TEMP               ; 85                                     ; --            ; --          ; --                                ;
-; MIN_CORE_JUNCTION_TEMP               ; 0                                      ; --            ; --          ; --                                ;
-; PARTITION_COLOR                      ; -- (Not supported for targeted family) ; --            ; --          ; Top                               ;
-; PARTITION_FITTER_PRESERVATION_LEVEL  ; -- (Not supported for targeted family) ; --            ; --          ; Top                               ;
-; PARTITION_NETLIST_TYPE               ; -- (Not supported for targeted family) ; --            ; --          ; Top                               ;
-; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                    ; --            ; --          ; --                                ;
-; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --          ; --                                ;
-; PROJECT_OUTPUT_DIRECTORY             ; output_files                           ; --            ; --          ; --                                ;
-+--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                                                       ;
++--------------------------------------+-------------------------------------------------------------------------------+---------------+-------------+-----------------------------------+
+; Assignment Name                      ; Value                                                                         ; Default Value ; Entity Name ; Section Id                        ;
++--------------------------------------+-------------------------------------------------------------------------------+---------------+-------------+-----------------------------------+
+; COMPILER_SIGNATURE_ID                ; 141361125699565.171609494841857                                               ; --            ; --          ; --                                ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                                                            ; --            ; --          ; ID1000500BTB                      ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                                                           ; --            ; --          ; eda_board_design_timing           ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                                                           ; --            ; --          ; eda_simulation                    ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                                                           ; --            ; --          ; eda_board_design_boundary_scan    ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                                                           ; --            ; --          ; eda_board_design_signal_integrity ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                                                           ; --            ; --          ; eda_board_design_symbol           ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; ID1000500BTB                                                                  ; --            ; --          ; eda_simulation                    ;
+; EDA_OUTPUT_DATA_FORMAT               ; Systemverilog Hdl                                                             ; --            ; --          ; eda_simulation                    ;
+; EDA_RUN_TOOL_AUTOMATICALLY           ; On                                                                            ; --            ; --          ; eda_simulation                    ;
+; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (SystemVerilog)                                               ; <None>        ; --          ; --                                ;
+; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                                                               ; --            ; --          ; eda_simulation                    ;
+; EDA_TEST_BENCH_FILE                  ; ../simulation/ID1000500BTB.v                                                  ; --            ; --          ; ID1000500BTB                      ;
+; EDA_TEST_BENCH_FILE                  ; ../src/convolution_coprocessor.sv                                             ; --            ; --          ; ID1000500BTB                      ;
+; EDA_TEST_BENCH_FILE                  ; ../src/convolution_coprocessor.sv.bak                                         ; --            ; --          ; ID1000500BTB                      ;
+; EDA_TEST_BENCH_FILE                  ; ../src/convolution_coprocessor_and.sv                                         ; --            ; --          ; ID1000500BTB                      ;
+; EDA_TEST_BENCH_FILE                  ; ../src/convolution_coprocessor_fsm.sv                                         ; --            ; --          ; ID1000500BTB                      ;
+; EDA_TEST_BENCH_FILE                  ; ../src/convolution_coprocessor_mult.sv                                        ; --            ; --          ; ID1000500BTB                      ;
+; EDA_TEST_BENCH_FILE                  ; ../src/convolution_coprocessor_mux.sv                                         ; --            ; --          ; ID1000500BTB                      ;
+; EDA_TEST_BENCH_FILE                  ; ../src/convolution_coprocessor_not.sv                                         ; --            ; --          ; ID1000500BTB                      ;
+; EDA_TEST_BENCH_FILE                  ; ../src/convolution_coprocessor_substractor.sv                                 ; --            ; --          ; ID1000500BTB                      ;
+; EDA_TEST_BENCH_FILE                  ; ../src/ID1000500B_aip.v                                                       ; --            ; --          ; ID1000500BTB                      ;
+; EDA_TEST_BENCH_FILE                  ; ../src/ID1000500B_convolution_coprocessor.v                                   ; --            ; --          ; ID1000500BTB                      ;
+; EDA_TEST_BENCH_FILE                  ; ../src/ID1000500B_convolution_coprocessor.v.bak                               ; --            ; --          ; ID1000500BTB                      ;
+; EDA_TEST_BENCH_FILE                  ; ../src/ID1000500B_convolution_coprocessor_core.sv                             ; --            ; --          ; ID1000500BTB                      ;
+; EDA_TEST_BENCH_FILE                  ; ../src/ID1000500B_convolution_coprocessor_core.sv.bak                         ; --            ; --          ; ID1000500BTB                      ;
+; EDA_TEST_BENCH_FILE                  ; ../src/ipm_ID1000500B_convolution_coprocessor.v                               ; --            ; --          ; ID1000500BTB                      ;
+; EDA_TEST_BENCH_FILE                  ; ../../../basicblocks/arithmetic/convolution_coprocessor_comparatorLessThan.sv ; --            ; --          ; ID1000500BTB                      ;
+; EDA_TEST_BENCH_FILE                  ; ../../../basicblocks/arithmetic/convolution_coprocessor_realAdder.v           ; --            ; --          ; ID1000500BTB                      ;
+; EDA_TEST_BENCH_FILE                  ; ../../../basicblocks/ipm/ipm.v                                                ; --            ; --          ; ID1000500BTB                      ;
+; EDA_TEST_BENCH_FILE                  ; ../../../basicblocks/ipm/ipm_register.v                                       ; --            ; --          ; ID1000500BTB                      ;
+; EDA_TEST_BENCH_FILE                  ; ../../../basicblocks/memories/convolution_coprocessor_simple_rom_sv.sv        ; --            ; --          ; ID1000500BTB                      ;
+; EDA_TEST_BENCH_FILE                  ; ../../../basicblocks/memories/simple_dual_port_ram_single_clk.v               ; --            ; --          ; ID1000500BTB                      ;
+; EDA_TEST_BENCH_FILE                  ; ../../../basicblocks/sequential/convolution_coprocessor_register.v            ; --            ; --          ; ID1000500BTB                      ;
+; EDA_TEST_BENCH_FILE                  ; ../../../basicblocks/aip/aipModules.v                                         ; --            ; --          ; ID1000500BTB                      ;
+; EDA_TEST_BENCH_MODULE_NAME           ; ID1000500BTB                                                                  ; --            ; --          ; ID1000500BTB                      ;
+; EDA_TEST_BENCH_NAME                  ; ID1000500BTB                                                                  ; --            ; --          ; eda_simulation                    ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 10 us                                                                         ; --            ; --          ; ID1000500BTB                      ;
+; EDA_TIME_SCALE                       ; 1 ps                                                                          ; --            ; --          ; eda_simulation                    ;
+; MAX_CORE_JUNCTION_TEMP               ; 85                                                                            ; --            ; --          ; --                                ;
+; MIN_CORE_JUNCTION_TEMP               ; 0                                                                             ; --            ; --          ; --                                ;
+; PARTITION_COLOR                      ; -- (Not supported for targeted family)                                        ; --            ; --          ; Top                               ;
+; PARTITION_FITTER_PRESERVATION_LEVEL  ; -- (Not supported for targeted family)                                        ; --            ; --          ; Top                               ;
+; PARTITION_NETLIST_TYPE               ; -- (Not supported for targeted family)                                        ; --            ; --          ; Top                               ;
+; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                                                           ; --            ; --          ; --                                ;
+; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW                                         ; --            ; --          ; --                                ;
+; PROJECT_OUTPUT_DIRECTORY             ; output_files                                                                  ; --            ; --          ; --                                ;
++--------------------------------------+-------------------------------------------------------------------------------+---------------+-------------+-----------------------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------+
@@ -109,12 +133,12 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:10     ; 1.0                     ; 436 MB              ; 00:00:27                           ;
-; Fitter               ; 00:00:09     ; 1.1                     ; 1114 MB             ; 00:00:14                           ;
+; Analysis & Synthesis ; 00:00:10     ; 1.0                     ; 419 MB              ; 00:00:26                           ;
+; Fitter               ; 00:00:09     ; 1.1                     ; 1109 MB             ; 00:00:14                           ;
 ; Assembler            ; 00:00:03     ; 1.0                     ; 361 MB              ; 00:00:03                           ;
-; Timing Analyzer      ; 00:00:02     ; 1.2                     ; 509 MB              ; 00:00:02                           ;
-; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 619 MB              ; 00:00:00                           ;
-; Total                ; 00:00:24     ; --                      ; --                  ; 00:00:46                           ;
+; Timing Analyzer      ; 00:00:02     ; 1.2                     ; 518 MB              ; 00:00:02                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 628 MB              ; 00:00:00                           ;
+; Total                ; 00:00:24     ; --                      ; --                  ; 00:00:45                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

@@ -17,7 +17,7 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition"
 
-// DATE "05/18/2024 21:58:53"
+// DATE "05/18/2024 23:02:55"
 
 // 
 // Device: Altera 10M50DAF484C7G Package FBGA484
@@ -48,24 +48,24 @@ output 	[7:0] dataMCU;
 output 	intMCU;
 
 // Design Ports Information
-// intMCU	=>  Location: PIN_AA8,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// dataMCU[0]	=>  Location: PIN_AA15,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// dataMCU[1]	=>  Location: PIN_W13,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// dataMCU[2]	=>  Location: PIN_AB13,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// dataMCU[3]	=>  Location: PIN_Y11,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// dataMCU[4]	=>  Location: PIN_W11,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// dataMCU[5]	=>  Location: PIN_AA10,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// dataMCU[6]	=>  Location: PIN_Y8,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// dataMCU[7]	=>  Location: PIN_Y7,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// clk	=>  Location: PIN_P11,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// rst	=>  Location: PIN_B8,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// rstMCU	=>  Location: PIN_AA9,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// wrMCU	=>  Location: PIN_AB10,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// addressMCU[2]	=>  Location: PIN_W12,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// addressMCU[3]	=>  Location: PIN_AB12,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// addressMCU[0]	=>  Location: PIN_W5,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// addressMCU[1]	=>  Location: PIN_AA14,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// rdMCU	=>  Location: PIN_AB11,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// intMCU	=>  Location: PIN_AA8,	 I/O Standard: 3.3-V LVCMOS,	 Current Strength: 2mA
+// dataMCU[0]	=>  Location: PIN_AA15,	 I/O Standard: 3.3-V LVCMOS,	 Current Strength: 2mA
+// dataMCU[1]	=>  Location: PIN_W13,	 I/O Standard: 3.3-V LVCMOS,	 Current Strength: 2mA
+// dataMCU[2]	=>  Location: PIN_AB13,	 I/O Standard: 3.3-V LVCMOS,	 Current Strength: 2mA
+// dataMCU[3]	=>  Location: PIN_Y11,	 I/O Standard: 3.3-V LVCMOS,	 Current Strength: 2mA
+// dataMCU[4]	=>  Location: PIN_W11,	 I/O Standard: 3.3-V LVCMOS,	 Current Strength: 2mA
+// dataMCU[5]	=>  Location: PIN_AA10,	 I/O Standard: 3.3-V LVCMOS,	 Current Strength: 2mA
+// dataMCU[6]	=>  Location: PIN_Y8,	 I/O Standard: 3.3-V LVCMOS,	 Current Strength: 2mA
+// dataMCU[7]	=>  Location: PIN_Y7,	 I/O Standard: 3.3-V LVCMOS,	 Current Strength: 2mA
+// clk	=>  Location: PIN_P11,	 I/O Standard: 3.3-V LVCMOS,	 Current Strength: Default
+// rst	=>  Location: PIN_B8,	 I/O Standard: 3.3-V LVCMOS,	 Current Strength: Default
+// rstMCU	=>  Location: PIN_AA9,	 I/O Standard: 3.3-V LVCMOS,	 Current Strength: Default
+// wrMCU	=>  Location: PIN_AB10,	 I/O Standard: 3.3-V LVCMOS,	 Current Strength: Default
+// addressMCU[2]	=>  Location: PIN_W12,	 I/O Standard: 3.3-V LVCMOS,	 Current Strength: Default
+// addressMCU[3]	=>  Location: PIN_AB12,	 I/O Standard: 3.3-V LVCMOS,	 Current Strength: Default
+// addressMCU[0]	=>  Location: PIN_W5,	 I/O Standard: 3.3-V LVCMOS,	 Current Strength: Default
+// addressMCU[1]	=>  Location: PIN_AA14,	 I/O Standard: 3.3-V LVCMOS,	 Current Strength: Default
+// rdMCU	=>  Location: PIN_AB11,	 I/O Standard: 3.3-V LVCMOS,	 Current Strength: Default
 
 
 wire gnd;

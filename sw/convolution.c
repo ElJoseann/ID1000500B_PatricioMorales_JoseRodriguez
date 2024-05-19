@@ -25,16 +25,16 @@ int main(){
     // Get random signals
     // y = get_signal(sizeY);
     y = (int*) malloc(sizeof(int) * sizeY);
-    y[0] = 0x1;
-    y[1] = 0x2;
-    y[2] = 0x3;
-    y[3] = 0x4;
-    y[4] = 0x5;
-    y[5] = 0x6;
-    y[6] = 0x7;
-    y[7] = 0x8;
-    y[8] = 0x9;
-    y[9] = 0xA;
+    y[0] = 0x0;
+    y[1] = 0x1;
+    y[2] = 0x2;
+    y[3] = 0x3;
+    y[4] = 0x4;
+    y[5] = 0x5;
+    y[6] = 0x6;
+    y[7] = 0x7;
+    y[8] = 0x8;
+    y[9] = 0x9;
     h = (int*) malloc(sizeof(int) * sizeH);
     h[0] = 0x04;
     h[1] = 0x30;
