@@ -22,7 +22,7 @@ localparam	CYCLE		    = 'd20, // Define the clock work cycle in ns (user)
             //------------------------------------------------------------
             //..................PARAMETERS DEFINED BY THE USER............
             //------------------------------------------------------------
-            SIZE_MEM     = 'd10,  //Size of the memories of the IP dummy
+            SIZE_MEM     = 'd15,  //Size of the memories of the IP dummy
             // ENA_DELAY    = 1'b0, //Enable delay
             // DELAY_MS     = 31'd20, //Delay in ms
             INT_BIT_DONE = 'd0; //Bit corresponding to the Int Done flag.
@@ -103,9 +103,25 @@ task convolution_task;
         /*for (i = 0; i < SIZE_MEM; i=i+1) begin //generating random data
             dataSet[i] = $urandom%100;          
         end   */  
-		  for (i = 0; i < SIZE_MEM; i=i+1) begin //generating random data
+		  /*for (i = 0; i < SIZE_MEM; i=i+1) begin //generating random data
             dataSet[i] = i;          
-        end
+        end*/
+		  
+		   dataSet[0]  = 8'h2D;
+			dataSet[1]  = 8'h29;
+			dataSet[2]  = 8'hA6;
+			dataSet[3]  = 8'h2F;
+			dataSet[4]  = 8'h4A;
+			dataSet[5]  = 8'hEB;
+			dataSet[6]  = 8'h73;
+			dataSet[7]  = 8'h5B;
+			dataSet[8]  = 8'h02;
+			dataSet[9]  = 8'hFB;
+			dataSet[10] = 8'h71;
+			dataSet[11] = 8'h5F;
+			dataSet[12] = 8'h61;
+			dataSet[13] = 8'h09;
+			dataSet[14] = 8'h13;
         
         //****CONVERTION TO A SINGLE ARRAY
         for (i = 0; i < (SIZE_MEM) ; i=i+1) begin 
@@ -117,7 +133,7 @@ task convolution_task;
         //DUMMY CONFIGURATION
         //tb_data[31:1] = DELAY_MS; 
         //tb_data[0]    = ENA_DELAY; 
-        tb_data = {{27{1'b0}},5'd10};
+        tb_data = {{27{1'b0}},5'd15};
         writeConfReg(CSIZE_Y,tb_data,1,0);
 
         // START PROCESS

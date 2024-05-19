@@ -1,5 +1,5 @@
 Flow report for ipm_ID1000500B_convolution_coprocessor
-Sat May 18 23:02:55 2024
+Sun May 19 00:46:26 2024
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Sat May 18 23:02:55 2024       ;
+; Flow Status                        ; Successful - Sun May 19 00:46:26 2024       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; ipm_ID1000500B_convolution_coprocessor      ;
 ; Top-level Entity Name              ; ipm_ID1000500B_convolution_coprocessor      ;
@@ -67,7 +67,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+----------------------------------------+
 ; Option            ; Setting                                ;
 +-------------------+----------------------------------------+
-; Start date & time ; 05/18/2024 23:02:28                    ;
+; Start date & time ; 05/19/2024 00:45:56                    ;
 ; Main task         ; Compilation                            ;
 ; Revision Name     ; ipm_ID1000500B_convolution_coprocessor ;
 +-------------------+----------------------------------------+
@@ -78,7 +78,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------+-------------------------------------------------------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                      ; Value                                                                         ; Default Value ; Entity Name ; Section Id                        ;
 +--------------------------------------+-------------------------------------------------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID                ; 141361125699565.171609494841857                                               ; --            ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID                ; 141361125699565.171610115651595                                               ; --            ; --          ; --                                ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                                                            ; --            ; --          ; ID1000500BTB                      ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                                                           ; --            ; --          ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                                                           ; --            ; --          ; eda_simulation                    ;
@@ -133,12 +133,12 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:10     ; 1.0                     ; 419 MB              ; 00:00:26                           ;
-; Fitter               ; 00:00:09     ; 1.1                     ; 1109 MB             ; 00:00:14                           ;
-; Assembler            ; 00:00:03     ; 1.0                     ; 361 MB              ; 00:00:03                           ;
-; Timing Analyzer      ; 00:00:02     ; 1.2                     ; 518 MB              ; 00:00:02                           ;
-; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 628 MB              ; 00:00:00                           ;
-; Total                ; 00:00:24     ; --                      ; --                  ; 00:00:45                           ;
+; Analysis & Synthesis ; 00:00:11     ; 1.0                     ; 434 MB              ; 00:00:29                           ;
+; Fitter               ; 00:00:10     ; 1.1                     ; 1086 MB             ; 00:00:16                           ;
+; Assembler            ; 00:00:02     ; 1.0                     ; 361 MB              ; 00:00:03                           ;
+; Timing Analyzer      ; 00:00:02     ; 1.2                     ; 508 MB              ; 00:00:03                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 628 MB              ; 00:00:00                           ;
+; Total                ; 00:00:26     ; --                      ; --                  ; 00:00:51                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
