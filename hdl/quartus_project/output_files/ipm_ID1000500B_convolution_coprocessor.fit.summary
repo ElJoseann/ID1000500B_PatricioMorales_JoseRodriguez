@@ -1,20 +1,18 @@
-Fitter Status : Successful - Sat May 18 19:45:40 2024
+Fitter Status : Successful - Sat May 18 19:59:19 2024
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : ipm_ID1000500B_convolution_coprocessor
 Top-level Entity Name : ipm_ID1000500B_convolution_coprocessor
-Family : Cyclone V
-Device : 5CSEMA5F31C6
+Family : MAX 10
+Device : 10M50DAF484C7G
 Timing Models : Final
-Logic utilization (in ALMs) : 101 / 32,070 ( < 1 % )
-Total registers : 193
-Total pins : 18 / 457 ( 4 % )
+Total logic elements : 275 / 49,760 ( < 1 % )
+    Total combinational functions : 213 / 49,760 ( < 1 % )
+    Dedicated logic registers : 177 / 49,760 ( < 1 % )
+Total registers : 177
+Total pins : 18 / 360 ( 5 % )
 Total virtual pins : 0
-Total block memory bits : 1,280 / 4,065,280 ( < 1 % )
-Total RAM Blocks : 2 / 397 ( < 1 % )
-Total DSP Blocks : 1 / 87 ( 1 % )
-Total HSSI RX PCSs : 0
-Total HSSI PMA RX Deserializers : 0
-Total HSSI TX PCSs : 0
-Total HSSI PMA TX Serializers : 0
-Total PLLs : 0 / 6 ( 0 % )
-Total DLLs : 0 / 4 ( 0 % )
+Total memory bits : 1,280 / 1,677,312 ( < 1 % )
+Embedded Multiplier 9-bit elements : 1 / 288 ( < 1 % )
+Total PLLs : 0 / 4 ( 0 % )
+UFM blocks : 0 / 1 ( 0 % )
+ADC blocks : 0 / 2 ( 0 % )
