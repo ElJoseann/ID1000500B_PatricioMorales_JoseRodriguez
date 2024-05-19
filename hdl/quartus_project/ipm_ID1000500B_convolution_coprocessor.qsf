@@ -55,19 +55,6 @@ set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_global_assignment -name VERILOG_FILE ../../../basicblocks/sequential/convolution_coprocessor_register.v
-set_global_assignment -name SYSTEMVERILOG_FILE ../simulation/simple_dual_port_ram_single_clk_sv.sv
-set_global_assignment -name SYSTEMVERILOG_FILE ../simulation/convolution_coprocessor_TB.sv
-set_global_assignment -name SYSTEMVERILOG_FILE ../../../basicblocks/memories/convolution_coprocessor_simple_rom_sv.sv
-set_global_assignment -name VERILOG_FILE ../../../basicblocks/arithmetic/convolution_coprocessor_realAdder.v
-set_global_assignment -name SYSTEMVERILOG_FILE ../../../basicblocks/arithmetic/convolution_coprocessor_comparatorLessThan.sv
-set_global_assignment -name SYSTEMVERILOG_FILE ../src/convolution_coprocessor_substractor.sv
-set_global_assignment -name SYSTEMVERILOG_FILE ../src/convolution_coprocessor_not.sv
-set_global_assignment -name SYSTEMVERILOG_FILE ../src/convolution_coprocessor_mux.sv
-set_global_assignment -name SYSTEMVERILOG_FILE ../src/convolution_coprocessor_mult.sv
-set_global_assignment -name SYSTEMVERILOG_FILE ../src/convolution_coprocessor_fsm.sv
-set_global_assignment -name SYSTEMVERILOG_FILE ../src/convolution_coprocessor_and.sv
-set_global_assignment -name SYSTEMVERILOG_FILE ../src/convolution_coprocessor.sv
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
@@ -80,4 +67,24 @@ set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "10 ns" -section_id convo
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME convolution_coprocessor_TB -section_id convolution_coprocessor_TB
 set_global_assignment -name EDA_TEST_BENCH_FILE ../simulation/convolution_coprocessor_TB.sv -section_id convolution_coprocessor_TB
 set_global_assignment -name EDA_TEST_BENCH_FILE ../simulation/simple_dual_port_ram_single_clk_sv.sv -section_id convolution_coprocessor_TB
+set_global_assignment -name VERILOG_FILE ../../../basicblocks/aip/aipModules.v
+set_global_assignment -name VERILOG_FILE ../../../basicblocks/memories/simple_dual_port_ram_single_clk.v
+set_global_assignment -name VERILOG_FILE ../../../basicblocks/ipm/ipm_register.v
+set_global_assignment -name VERILOG_FILE ../../../basicblocks/ipm/ipm.v
+set_global_assignment -name VERILOG_FILE ../src/ID1000500B_aip.v
+set_global_assignment -name VERILOG_FILE ../../../basicblocks/sequential/convolution_coprocessor_register.v
+set_global_assignment -name SYSTEMVERILOG_FILE ../simulation/simple_dual_port_ram_single_clk_sv.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ../simulation/convolution_coprocessor_TB.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ../../../basicblocks/memories/convolution_coprocessor_simple_rom_sv.sv
+set_global_assignment -name VERILOG_FILE ../../../basicblocks/arithmetic/convolution_coprocessor_realAdder.v
+set_global_assignment -name SYSTEMVERILOG_FILE ../../../basicblocks/arithmetic/convolution_coprocessor_comparatorLessThan.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ../src/convolution_coprocessor_substractor.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ../src/convolution_coprocessor_not.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ../src/convolution_coprocessor_mux.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ../src/convolution_coprocessor_mult.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ../src/convolution_coprocessor_fsm.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ../src/convolution_coprocessor_and.sv
+set_global_assignment -name VERILOG_FILE ../src/ID1000500B_convolution_coprocessor.v
+set_global_assignment -name SYSTEMVERILOG_FILE ../src/ID1000500B_convolution_coprocessor_core.sv
+set_global_assignment -name VERILOG_FILE ../src/ipm_ID1000500B_convolution_coprocessor.v
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

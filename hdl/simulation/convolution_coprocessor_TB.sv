@@ -36,7 +36,7 @@ wire [DATA_WIDTH_MEMZ-1:0] dataZ_read;
 // Convolution Coprocessor Instance
 //****************************************************************
 
-ipm_ID1000500B_convolution_coprocessor DUT(
+ID1000500B_convolution_coprocessor_core DUT(
 	.clk(clk),
 	.rstn(rstn),
 	

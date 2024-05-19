@@ -4,143 +4,39 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "memY_addr[0]",
+					"name" : "intMCU",
 					"strict" : false
 				},
 				{
-					"name" : "memY_addr[1]",
+					"name" : "dataMCU[0]",
 					"strict" : false
 				},
 				{
-					"name" : "memY_addr[2]",
+					"name" : "dataMCU[1]",
 					"strict" : false
 				},
 				{
-					"name" : "memY_addr[3]",
+					"name" : "dataMCU[2]",
 					"strict" : false
 				},
 				{
-					"name" : "memY_addr[4]",
+					"name" : "dataMCU[3]",
 					"strict" : false
 				},
 				{
-					"name" : "dataZ[0]",
+					"name" : "dataMCU[4]",
 					"strict" : false
 				},
 				{
-					"name" : "dataZ[1]",
+					"name" : "dataMCU[5]",
 					"strict" : false
 				},
 				{
-					"name" : "dataZ[2]",
+					"name" : "dataMCU[6]",
 					"strict" : false
 				},
 				{
-					"name" : "dataZ[3]",
-					"strict" : false
-				},
-				{
-					"name" : "dataZ[4]",
-					"strict" : false
-				},
-				{
-					"name" : "dataZ[5]",
-					"strict" : false
-				},
-				{
-					"name" : "dataZ[6]",
-					"strict" : false
-				},
-				{
-					"name" : "dataZ[7]",
-					"strict" : false
-				},
-				{
-					"name" : "dataZ[8]",
-					"strict" : false
-				},
-				{
-					"name" : "dataZ[9]",
-					"strict" : false
-				},
-				{
-					"name" : "dataZ[10]",
-					"strict" : false
-				},
-				{
-					"name" : "dataZ[11]",
-					"strict" : false
-				},
-				{
-					"name" : "dataZ[12]",
-					"strict" : false
-				},
-				{
-					"name" : "dataZ[13]",
-					"strict" : false
-				},
-				{
-					"name" : "dataZ[14]",
-					"strict" : false
-				},
-				{
-					"name" : "dataZ[15]",
-					"strict" : false
-				},
-				{
-					"name" : "memZ_addr[0]",
-					"strict" : false
-				},
-				{
-					"name" : "memZ_addr[1]",
-					"strict" : false
-				},
-				{
-					"name" : "memZ_addr[2]",
-					"strict" : false
-				},
-				{
-					"name" : "memZ_addr[3]",
-					"strict" : false
-				},
-				{
-					"name" : "memZ_addr[4]",
-					"strict" : false
-				},
-				{
-					"name" : "memZ_addr[5]",
-					"strict" : false
-				},
-				{
-					"name" : "writeZ",
-					"strict" : false
-				},
-				{
-					"name" : "busy",
-					"strict" : false
-				},
-				{
-					"name" : "done",
-					"strict" : false
-				},
-				{
-					"name" : "sizeY[3]",
-					"strict" : false
-				},
-				{
-					"name" : "sizeY[4]",
-					"strict" : false
-				},
-				{
-					"name" : "sizeY[2]",
-					"strict" : false
-				},
-				{
-					"name" : "sizeY[0]",
-					"strict" : false
-				},
-				{
-					"name" : "sizeY[1]",
+					"name" : "dataMCU[7]",
 					"strict" : false
 				},
 				{
@@ -148,43 +44,35 @@
 					"strict" : false
 				},
 				{
-					"name" : "rstn",
+					"name" : "rst",
 					"strict" : false
 				},
 				{
-					"name" : "start",
+					"name" : "rstMCU",
 					"strict" : false
 				},
 				{
-					"name" : "dataY[0]",
+					"name" : "addressMCU[1]",
 					"strict" : false
 				},
 				{
-					"name" : "dataY[1]",
+					"name" : "wrMCU",
 					"strict" : false
 				},
 				{
-					"name" : "dataY[2]",
+					"name" : "addressMCU[0]",
 					"strict" : false
 				},
 				{
-					"name" : "dataY[3]",
+					"name" : "addressMCU[2]",
 					"strict" : false
 				},
 				{
-					"name" : "dataY[4]",
+					"name" : "addressMCU[3]",
 					"strict" : false
 				},
 				{
-					"name" : "dataY[5]",
-					"strict" : false
-				},
-				{
-					"name" : "dataY[6]",
-					"strict" : false
-				},
-				{
-					"name" : "dataY[7]",
+					"name" : "rdMCU",
 					"strict" : false
 				}
 			]
