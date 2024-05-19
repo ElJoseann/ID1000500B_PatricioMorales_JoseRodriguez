@@ -133,8 +133,8 @@ set_location_assignment PIN_AE17 -to rdMCU
 set_location_assignment PIN_AH19 -to wrMCU
 set_location_assignment PIN_AH20 -to rstMCU
 
-set_location_assignment PIN_AE12 -to rst
-set_location_assignment PIN_AA16 -to clk
+set_location_assignment PIN_AA14 -to rst
+set_location_assignment PIN_AF14 -to clk
 set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to addressMCU[3]
 set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to addressMCU[2]
 set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to addressMCU[1]
