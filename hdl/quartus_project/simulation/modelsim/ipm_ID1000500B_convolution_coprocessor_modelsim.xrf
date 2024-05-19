@@ -19,6 +19,7 @@ source_file = 1, /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hd
 source_file = 1, /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/src/ID1000500B_convolution_coprocessor.v
 source_file = 1, /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/src/ID1000500B_convolution_coprocessor_core.sv
 source_file = 1, /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/src/ipm_ID1000500B_convolution_coprocessor.v
+source_file = 1, /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/simulation/ID1000500BTB.v
 source_file = 1, /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/sw/MemoryH.txt
 source_file = 1, /home/joserodriguez/intelFPGA_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf
 source_file = 1, /home/joserodriguez/intelFPGA_lite/20.1/quartus/libraries/megafunctions/stratix_ram_block.inc

@@ -17,7 +17,7 @@ module ID1000500B_convolution_coprocessor
 );
 
     localparam DATA_WIDTH = 'd32; //define data length
-    localparam MEM_ADDR_MAX_WIDTH = 'd64;
+    localparam MEM_ADDR_MAX_WIDTH = 'd16;
     localparam ADDR_WIDTH_MEMI = 'd5; //define Memory In depth
     localparam ADDR_WIDTH_MEMO = 'd6; //define Memory Out depth
     localparam SIZE_CR = 'd1; //define Configuration Register depth
@@ -86,13 +86,13 @@ module ID1000500B_convolution_coprocessor
         .rstn (rst_a),
         //.en_s (en_s),
 		  
-		  .dataY(data_MemIn0),
+		  .dataY(data_MemIn0[7:0]),
 		  .sizeY(data_ConfigReg[4:0]),
 		  .start(start_IPcore),
 		  
 		  .memY_addr(rd_addr_MemIn0[ADDR_WIDTH_MEMI-1:0]),
 		  
-		  .dataZ(data_MemOut0),
+		  .dataZ(data_MemOut0[15:0]),
 		  .memZ_addr(wr_addr_MemOut0[ADDR_WIDTH_MEMO-1:0]),
 		  .writeZ(wr_en_MemOut0),
 		  .busy(status_IPcore[0]),

@@ -60,13 +60,7 @@ set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
-set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH convolution_coprocessor_TB -section_id eda_simulation
-set_global_assignment -name EDA_TEST_BENCH_NAME convolution_coprocessor_TB -section_id eda_simulation
-set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id convolution_coprocessor_TB
-set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "10 ns" -section_id convolution_coprocessor_TB
-set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME convolution_coprocessor_TB -section_id convolution_coprocessor_TB
-set_global_assignment -name EDA_TEST_BENCH_FILE ../simulation/convolution_coprocessor_TB.sv -section_id convolution_coprocessor_TB
-set_global_assignment -name EDA_TEST_BENCH_FILE ../simulation/simple_dual_port_ram_single_clk_sv.sv -section_id convolution_coprocessor_TB
+set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH ID1000500BTB -section_id eda_simulation
 set_global_assignment -name VERILOG_FILE ../../../basicblocks/aip/aipModules.v
 set_global_assignment -name VERILOG_FILE ../../../basicblocks/memories/simple_dual_port_ram_single_clk.v
 set_global_assignment -name VERILOG_FILE ../../../basicblocks/ipm/ipm_register.v
@@ -107,4 +101,10 @@ set_location_assignment PIN_AA9 -to rstMCU
 
 set_location_assignment PIN_P11 -to clk
 set_location_assignment PIN_B8 -to rst
+set_global_assignment -name VERILOG_FILE ../simulation/ID1000500BTB.v
+set_global_assignment -name EDA_TEST_BENCH_NAME ID1000500BTB -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id ID1000500BTB
+set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "10 us" -section_id ID1000500BTB
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME ID1000500BTB -section_id ID1000500BTB
+set_global_assignment -name EDA_TEST_BENCH_FILE ../simulation/ID1000500BTB.v -section_id ID1000500BTB
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

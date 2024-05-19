@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ipm_ID1000500B_convolution_coprocessor
-Sat May 18 19:59:07 2024
+Sat May 18 21:58:36 2024
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -71,17 +71,16 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
  63. Port Connectivity Checks: "ID1000500B_convolution_coprocessor:IP_convolution_coprocessor|ID1000500B_convolution_coprocessor_core:CORE|convolution_coprocessor_register:i_reg"
  64. Port Connectivity Checks: "ID1000500B_convolution_coprocessor:IP_convolution_coprocessor|ID1000500B_convolution_coprocessor_core:CORE|convolution_coprocessor_mux:i_mux"
  65. Port Connectivity Checks: "ID1000500B_convolution_coprocessor:IP_convolution_coprocessor|ID1000500B_convolution_coprocessor_core:CORE|convolution_coprocessor_realAdder:i_adder"
- 66. Port Connectivity Checks: "ID1000500B_convolution_coprocessor:IP_convolution_coprocessor|ID1000500B_convolution_coprocessor_core:CORE"
- 67. Port Connectivity Checks: "ID1000500B_convolution_coprocessor:IP_convolution_coprocessor|ID1000500B_aip:INTERFACE|ID1000500B_aipModules:AIP|aipParametricMux:MUX"
- 68. Port Connectivity Checks: "ID1000500B_convolution_coprocessor:IP_convolution_coprocessor|ID1000500B_aip:INTERFACE|ID1000500B_aipModules:AIP|ID1000500B_aipCtrl:CNTRL"
- 69. Port Connectivity Checks: "ID1000500B_convolution_coprocessor:IP_convolution_coprocessor|ID1000500B_aip:INTERFACE|ID1000500B_aipModules:AIP|aipConfigurationRegister:CONFREG"
- 70. Port Connectivity Checks: "ID1000500B_convolution_coprocessor:IP_convolution_coprocessor|ID1000500B_aip:INTERFACE|ID1000500B_aipModules:AIP"
- 71. Port Connectivity Checks: "ID1000500B_convolution_coprocessor:IP_convolution_coprocessor|ID1000500B_aip:INTERFACE"
- 72. Port Connectivity Checks: "ID1000500B_convolution_coprocessor:IP_convolution_coprocessor"
- 73. Post-Synthesis Netlist Statistics for Top Partition
- 74. Elapsed Time Per Partition
- 75. Analysis & Synthesis Messages
- 76. Analysis & Synthesis Suppressed Messages
+ 66. Port Connectivity Checks: "ID1000500B_convolution_coprocessor:IP_convolution_coprocessor|ID1000500B_aip:INTERFACE|ID1000500B_aipModules:AIP|aipParametricMux:MUX"
+ 67. Port Connectivity Checks: "ID1000500B_convolution_coprocessor:IP_convolution_coprocessor|ID1000500B_aip:INTERFACE|ID1000500B_aipModules:AIP|ID1000500B_aipCtrl:CNTRL"
+ 68. Port Connectivity Checks: "ID1000500B_convolution_coprocessor:IP_convolution_coprocessor|ID1000500B_aip:INTERFACE|ID1000500B_aipModules:AIP|aipConfigurationRegister:CONFREG"
+ 69. Port Connectivity Checks: "ID1000500B_convolution_coprocessor:IP_convolution_coprocessor|ID1000500B_aip:INTERFACE|ID1000500B_aipModules:AIP"
+ 70. Port Connectivity Checks: "ID1000500B_convolution_coprocessor:IP_convolution_coprocessor|ID1000500B_aip:INTERFACE"
+ 71. Port Connectivity Checks: "ID1000500B_convolution_coprocessor:IP_convolution_coprocessor"
+ 72. Post-Synthesis Netlist Statistics for Top Partition
+ 73. Elapsed Time Per Partition
+ 74. Analysis & Synthesis Messages
+ 75. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -108,7 +107,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat May 18 19:59:07 2024       ;
+; Analysis & Synthesis Status        ; Successful - Sat May 18 21:58:36 2024       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; ipm_ID1000500B_convolution_coprocessor      ;
 ; Top-level Entity Name              ; ipm_ID1000500B_convolution_coprocessor      ;
@@ -1245,16 +1244,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------------+-------+----------+--------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ID1000500B_convolution_coprocessor:IP_convolution_coprocessor|ID1000500B_convolution_coprocessor_core:CORE"                                                                         ;
-+-------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port  ; Type   ; Severity ; Details                                                                                                                                                                            ;
-+-------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; dataY ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (8 bits) it drives.  The 24 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-; dataZ ; Output ; Warning  ; Output or bidir port (16 bits) is smaller than the port expression (32 bits) it drives.  The 16 most-significant bit(s) in the port expression will be connected to GND.           ;
-+-------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-
-
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "ID1000500B_convolution_coprocessor:IP_convolution_coprocessor|ID1000500B_aip:INTERFACE|ID1000500B_aipModules:AIP|aipParametricMux:MUX" ;
 +-----------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------+
@@ -1293,16 +1282,14 @@ Note: In order to hide this table in the UI and the text report file, please set
 +--------------------+-------+----------+------------------------------------------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ID1000500B_convolution_coprocessor:IP_convolution_coprocessor|ID1000500B_aip:INTERFACE"                                                                                                               ;
-+------------------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port                   ; Type   ; Severity ; Details                                                                                                                                                                             ;
-+------------------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; rdDataMemIn_0[31..8]   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                                                 ;
-; rdAddrMemIn_0          ; Input  ; Warning  ; Input port expression (64 bits) is wider than the input port (16 bits) it drives.  The 48 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-; wrAddrMemOut_0         ; Input  ; Warning  ; Input port expression (64 bits) is wider than the input port (16 bits) it drives.  The 48 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-; rdDataConfigReg[31..5] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                                                 ;
-+------------------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ID1000500B_convolution_coprocessor:IP_convolution_coprocessor|ID1000500B_aip:INTERFACE"               ;
++------------------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port                   ; Type   ; Severity ; Details                                                                             ;
++------------------------+--------+----------+-------------------------------------------------------------------------------------+
+; rdDataMemIn_0[31..8]   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; rdDataConfigReg[31..5] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------------------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +-------------------------------------------------------------------------------------------+
@@ -1360,7 +1347,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Sat May 18 19:58:56 2024
+    Info: Processing started: Sat May 18 21:58:26 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ipm_ID1000500B_convolution_coprocessor -c ipm_ID1000500B_convolution_coprocessor
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -1409,6 +1396,8 @@ Info (12021): Found 1 design units, including 1 entities, in source file /home/j
     Info (12023): Found entity 1: ID1000500B_convolution_coprocessor_core File: /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/src/ID1000500B_convolution_coprocessor_core.sv Line: 13
 Info (12021): Found 1 design units, including 1 entities, in source file /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/src/ipm_ID1000500B_convolution_coprocessor.v
     Info (12023): Found entity 1: ipm_ID1000500B_convolution_coprocessor File: /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/src/ipm_ID1000500B_convolution_coprocessor.v Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/simulation/ID1000500BTB.v
+    Info (12023): Found entity 1: ID1000500BTB File: /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/simulation/ID1000500BTB.v Line: 3
 Warning (10037): Verilog HDL or VHDL warning at ID1000500B_aip.v(667): conditional expression evaluates to a constant File: /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/src/ID1000500B_aip.v Line: 667
 Info (12127): Elaborating entity "ipm_ID1000500B_convolution_coprocessor" for the top level hierarchy
 Info (12128): Elaborating entity "ipm" for hierarchy "ipm:IPM" File: /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/src/ipm_ID1000500B_convolution_coprocessor.v Line: 53
@@ -1445,23 +1434,6 @@ Info (12128): Elaborating entity "convolution_coprocessor_mult" for hierarchy "I
 Warning (10230): Verilog HDL assignment warning at convolution_coprocessor_mult.sv(71): truncated value with size 17 to match size of target (16) File: /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/src/convolution_coprocessor_mult.sv Line: 71
 Info (12128): Elaborating entity "convolution_coprocessor_realAdder" for hierarchy "ID1000500B_convolution_coprocessor:IP_convolution_coprocessor|ID1000500B_convolution_coprocessor_core:CORE|convolution_coprocessor_realAdder:currentZ_sum" File: /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/src/ID1000500B_convolution_coprocessor_core.sv Line: 289
 Info (12128): Elaborating entity "convolution_coprocessor_register" for hierarchy "ID1000500B_convolution_coprocessor:IP_convolution_coprocessor|ID1000500B_convolution_coprocessor_core:CORE|convolution_coprocessor_register:currentZ_reg" File: /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/src/ID1000500B_convolution_coprocessor_core.sv Line: 301
-Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "ID1000500B_convolution_coprocessor:IP_convolution_coprocessor|data_MemOut0[31]" is missing source, defaulting to GND File: /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/src/ID1000500B_convolution_coprocessor.v Line: 43
-    Warning (12110): Net "ID1000500B_convolution_coprocessor:IP_convolution_coprocessor|data_MemOut0[30]" is missing source, defaulting to GND File: /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/src/ID1000500B_convolution_coprocessor.v Line: 43
-    Warning (12110): Net "ID1000500B_convolution_coprocessor:IP_convolution_coprocessor|data_MemOut0[29]" is missing source, defaulting to GND File: /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/src/ID1000500B_convolution_coprocessor.v Line: 43
-    Warning (12110): Net "ID1000500B_convolution_coprocessor:IP_convolution_coprocessor|data_MemOut0[28]" is missing source, defaulting to GND File: /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/src/ID1000500B_convolution_coprocessor.v Line: 43
-    Warning (12110): Net "ID1000500B_convolution_coprocessor:IP_convolution_coprocessor|data_MemOut0[27]" is missing source, defaulting to GND File: /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/src/ID1000500B_convolution_coprocessor.v Line: 43
-    Warning (12110): Net "ID1000500B_convolution_coprocessor:IP_convolution_coprocessor|data_MemOut0[26]" is missing source, defaulting to GND File: /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/src/ID1000500B_convolution_coprocessor.v Line: 43
-    Warning (12110): Net "ID1000500B_convolution_coprocessor:IP_convolution_coprocessor|data_MemOut0[25]" is missing source, defaulting to GND File: /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/src/ID1000500B_convolution_coprocessor.v Line: 43
-    Warning (12110): Net "ID1000500B_convolution_coprocessor:IP_convolution_coprocessor|data_MemOut0[24]" is missing source, defaulting to GND File: /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/src/ID1000500B_convolution_coprocessor.v Line: 43
-    Warning (12110): Net "ID1000500B_convolution_coprocessor:IP_convolution_coprocessor|data_MemOut0[23]" is missing source, defaulting to GND File: /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/src/ID1000500B_convolution_coprocessor.v Line: 43
-    Warning (12110): Net "ID1000500B_convolution_coprocessor:IP_convolution_coprocessor|data_MemOut0[22]" is missing source, defaulting to GND File: /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/src/ID1000500B_convolution_coprocessor.v Line: 43
-    Warning (12110): Net "ID1000500B_convolution_coprocessor:IP_convolution_coprocessor|data_MemOut0[21]" is missing source, defaulting to GND File: /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/src/ID1000500B_convolution_coprocessor.v Line: 43
-    Warning (12110): Net "ID1000500B_convolution_coprocessor:IP_convolution_coprocessor|data_MemOut0[20]" is missing source, defaulting to GND File: /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/src/ID1000500B_convolution_coprocessor.v Line: 43
-    Warning (12110): Net "ID1000500B_convolution_coprocessor:IP_convolution_coprocessor|data_MemOut0[19]" is missing source, defaulting to GND File: /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/src/ID1000500B_convolution_coprocessor.v Line: 43
-    Warning (12110): Net "ID1000500B_convolution_coprocessor:IP_convolution_coprocessor|data_MemOut0[18]" is missing source, defaulting to GND File: /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/src/ID1000500B_convolution_coprocessor.v Line: 43
-    Warning (12110): Net "ID1000500B_convolution_coprocessor:IP_convolution_coprocessor|data_MemOut0[17]" is missing source, defaulting to GND File: /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/src/ID1000500B_convolution_coprocessor.v Line: 43
-    Warning (12110): Net "ID1000500B_convolution_coprocessor:IP_convolution_coprocessor|data_MemOut0[16]" is missing source, defaulting to GND File: /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/src/ID1000500B_convolution_coprocessor.v Line: 43
 Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/db/ipm_ID1000500B_convolution_coprocessor.ram0_convolution_coprocessor_simple_rom_sv_647a8ec5.hdl.mif" contains "don't care" values -- overwriting them with 0s
 Warning (276020): Inferred RAM node "ID1000500B_convolution_coprocessor:IP_convolution_coprocessor|ID1000500B_aip:INTERFACE|ID1000500B_aipModules:AIP|simple_dual_port_ram_single_clk:MEMOUT[0].MEMOUT|RAM_Structure_rtl_0" from synchronous design logic.  Pass-through logic has been added to match the read-during-write behavior of the original design.
 Warning (276020): Inferred RAM node "ID1000500B_convolution_coprocessor:IP_convolution_coprocessor|ID1000500B_aip:INTERFACE|ID1000500B_aipModules:AIP|simple_dual_port_ram_single_clk:MEMIN[0].MEMIN|RAM_Structure_rtl_0" from synchronous design logic.  Pass-through logic has been added to match the read-during-write behavior of the original design.
@@ -1550,7 +1522,6 @@ Info (12133): Instantiated megafunction "ID1000500B_convolution_coprocessor:IP_c
     Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
 Info (12021): Found 1 design units, including 1 entities, in source file db/mult_rds.tdf
     Info (12023): Found entity 1: mult_rds File: /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/db/mult_rds.tdf Line: 29
-Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 40 registers lost all their fanouts during netlist optimizations.
 Info (144001): Generated suppressed messages file /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/output_files/ipm_ID1000500B_convolution_coprocessor.map.smsg
@@ -1563,10 +1534,10 @@ Info (21057): Implemented 366 device resources after synthesis - the final resou
     Info (21061): Implemented 323 logic cells
     Info (21064): Implemented 24 RAM segments
     Info (21062): Implemented 1 DSP elements
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 29 warnings
-    Info: Peak virtual memory: 444 megabytes
-    Info: Processing ended: Sat May 18 19:59:07 2024
-    Info: Elapsed time: 00:00:11
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 11 warnings
+    Info: Peak virtual memory: 443 megabytes
+    Info: Processing ended: Sat May 18 21:58:36 2024
+    Info: Elapsed time: 00:00:10
     Info: Total CPU time (on all processors): 00:00:27
 
 

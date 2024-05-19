@@ -23,8 +23,25 @@ int main(){
     // Initialize seed
     srand(time(0));
     // Get random signals
-    y = get_signal(sizeY);
-    h = get_signal(sizeH);
+    // y = get_signal(sizeY);
+    y = (int*) malloc(sizeof(int) * sizeY);
+    y[0] = 0x1;
+    y[1] = 0x2;
+    y[2] = 0x3;
+    y[3] = 0x4;
+    y[4] = 0x5;
+    y[5] = 0x6;
+    y[6] = 0x7;
+    y[7] = 0x8;
+    y[8] = 0x9;
+    y[9] = 0xA;
+    h = (int*) malloc(sizeof(int) * sizeH);
+    h[0] = 0x04;
+    h[1] = 0x30;
+    h[2] = 0x13;
+    h[3] = 0x0A;
+    h[4] = 0x26;
+    // h = get_signal(sizeH);
     // Calculate convolution
     z = get_convolution(y, h, sizeY, sizeH);
     // Generate files

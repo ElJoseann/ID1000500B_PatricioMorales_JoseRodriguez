@@ -16,7 +16,7 @@ dataMCU[4] <> ipm:IPM.ipmMCUDataInout
 dataMCU[5] <> ipm:IPM.ipmMCUDataInout
 dataMCU[6] <> ipm:IPM.ipmMCUDataInout
 dataMCU[7] <> ipm:IPM.ipmMCUDataInout
-intMCU <= ipm:IPM.ipmMCUINTOut
+intMCU << ipm:IPM.ipmMCUINTOut
 
 
 |ipm_ID1000500B_convolution_coprocessor|ipm:IPM
