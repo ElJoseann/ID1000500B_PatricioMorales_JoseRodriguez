@@ -1,8 +1,8 @@
 <sld_project_info>
   <project>
-    <hash md5_digest_80b="70c37555431c86735661"/>
+    <hash md5_digest_80b="97d41dcb509a564827ed"/>
   </project>
   <file_info>
-    <file device="10M50DAF484C7G" path="ipm_ID1000500B_convolution_coprocessor.sof" usercode="0xFFFFFFFF"/>
+    <file device="5CSEMA5F31C6" path="ipm_ID1000500B_convolution_coprocessor.sof" usercode="0xFFFFFFFF"/>
   </file_info>
 </sld_project_info>

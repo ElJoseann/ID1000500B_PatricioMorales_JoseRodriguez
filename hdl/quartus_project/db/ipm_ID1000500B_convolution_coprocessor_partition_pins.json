@@ -52,7 +52,15 @@
 					"strict" : false
 				},
 				{
+					"name" : "addressMCU[1]",
+					"strict" : false
+				},
+				{
 					"name" : "wrMCU",
+					"strict" : false
+				},
+				{
+					"name" : "addressMCU[0]",
 					"strict" : false
 				},
 				{
@@ -61,14 +69,6 @@
 				},
 				{
 					"name" : "addressMCU[3]",
-					"strict" : false
-				},
-				{
-					"name" : "addressMCU[0]",
-					"strict" : false
-				},
-				{
-					"name" : "addressMCU[1]",
 					"strict" : false
 				},
 				{
