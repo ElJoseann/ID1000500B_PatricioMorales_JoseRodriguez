@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ipm_ID1000500B_convolution_coprocessor
-Sun May 19 00:46:07 2024
+Sun May 19 01:00:21 2024
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -107,7 +107,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun May 19 00:46:07 2024       ;
+; Analysis & Synthesis Status        ; Successful - Sun May 19 01:00:21 2024       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; ipm_ID1000500B_convolution_coprocessor      ;
 ; Top-level Entity Name              ; ipm_ID1000500B_convolution_coprocessor      ;
@@ -269,7 +269,7 @@ https://fpgasoftware.intel.com/eula.
 ; multcore.inc                                                                  ; yes             ; Megafunction                 ; /home/joserodriguez/intelFPGA_lite/20.1/quartus/libraries/megafunctions/multcore.inc                            ;         ;
 ; bypassff.inc                                                                  ; yes             ; Megafunction                 ; /home/joserodriguez/intelFPGA_lite/20.1/quartus/libraries/megafunctions/bypassff.inc                            ;         ;
 ; altshift.inc                                                                  ; yes             ; Megafunction                 ; /home/joserodriguez/intelFPGA_lite/20.1/quartus/libraries/megafunctions/altshift.inc                            ;         ;
-; db/mult_rds.tdf                                                               ; yes             ; Auto-Generated Megafunction  ; /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/db/mult_rds.tdf                ;         ;
+; db/mult_sks.tdf                                                               ; yes             ; Auto-Generated Megafunction  ; /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/db/mult_sks.tdf                ;         ;
 +-------------------------------------------------------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------------------------------------+---------+
 
 
@@ -283,8 +283,8 @@ https://fpgasoftware.intel.com/eula.
 ; Total combinational functions               ; 212       ;
 ; Logic element usage by number of LUT inputs ;           ;
 ;     -- 4 input functions                    ; 82        ;
-;     -- 3 input functions                    ; 76        ;
-;     -- <=2 input functions                  ; 54        ;
+;     -- 3 input functions                    ; 75        ;
+;     -- <=2 input functions                  ; 55        ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
 ;     -- normal mode                          ; 169       ;
@@ -301,8 +301,8 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
 ; Maximum fan-out                             ; 207       ;
-; Total fan-out                               ; 1709      ;
-; Average fan-out                             ; 3.68      ;
+; Total fan-out                               ; 1707      ;
+; Average fan-out                             ; 3.67      ;
 +---------------------------------------------+-----------+
 
 
@@ -333,7 +333,7 @@ https://fpgasoftware.intel.com/eula.
 ;          |convolution_coprocessor_fsm:FSM|                                   ; 14 (14)             ; 12 (12)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ipm_ID1000500B_convolution_coprocessor|ID1000500B_convolution_coprocessor:IP_convolution_coprocessor|ID1000500B_convolution_coprocessor_core:CORE|convolution_coprocessor_fsm:FSM                                                                                      ; convolution_coprocessor_fsm                ; work         ;
 ;          |convolution_coprocessor_mult:currentZ_mult|                        ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 1            ; 1       ; 0         ; 0    ; 0            ; 0          ; |ipm_ID1000500B_convolution_coprocessor|ID1000500B_convolution_coprocessor:IP_convolution_coprocessor|ID1000500B_convolution_coprocessor_core:CORE|convolution_coprocessor_mult:currentZ_mult                                                                           ; convolution_coprocessor_mult               ; work         ;
 ;             |lpm_mult:Mult0|                                                 ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 1            ; 1       ; 0         ; 0    ; 0            ; 0          ; |ipm_ID1000500B_convolution_coprocessor|ID1000500B_convolution_coprocessor:IP_convolution_coprocessor|ID1000500B_convolution_coprocessor_core:CORE|convolution_coprocessor_mult:currentZ_mult|lpm_mult:Mult0                                                            ; lpm_mult                                   ; work         ;
-;                |mult_rds:auto_generated|                                     ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 1            ; 1       ; 0         ; 0    ; 0            ; 0          ; |ipm_ID1000500B_convolution_coprocessor|ID1000500B_convolution_coprocessor:IP_convolution_coprocessor|ID1000500B_convolution_coprocessor_core:CORE|convolution_coprocessor_mult:currentZ_mult|lpm_mult:Mult0|mult_rds:auto_generated                                    ; mult_rds                                   ; work         ;
+;                |mult_sks:auto_generated|                                     ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 1            ; 1       ; 0         ; 0    ; 0            ; 0          ; |ipm_ID1000500B_convolution_coprocessor|ID1000500B_convolution_coprocessor:IP_convolution_coprocessor|ID1000500B_convolution_coprocessor_core:CORE|convolution_coprocessor_mult:currentZ_mult|lpm_mult:Mult0|mult_sks:auto_generated                                    ; mult_sks                                   ; work         ;
 ;          |convolution_coprocessor_mux:memH_addr_mux|                         ; 4 (4)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ipm_ID1000500B_convolution_coprocessor|ID1000500B_convolution_coprocessor:IP_convolution_coprocessor|ID1000500B_convolution_coprocessor_core:CORE|convolution_coprocessor_mux:memH_addr_mux                                                                            ; convolution_coprocessor_mux                ; work         ;
 ;          |convolution_coprocessor_mux:memY_addr_mux|                         ; 5 (5)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ipm_ID1000500B_convolution_coprocessor|ID1000500B_convolution_coprocessor:IP_convolution_coprocessor|ID1000500B_convolution_coprocessor_core:CORE|convolution_coprocessor_mux:memY_addr_mux                                                                            ; convolution_coprocessor_mux                ; work         ;
 ;          |convolution_coprocessor_mux:upper_limit_mux|                       ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ipm_ID1000500B_convolution_coprocessor|ID1000500B_convolution_coprocessor:IP_convolution_coprocessor|ID1000500B_convolution_coprocessor_core:CORE|convolution_coprocessor_mux:upper_limit_mux                                                                          ; convolution_coprocessor_mux                ; work         ;
@@ -370,8 +370,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Simple Multipliers (18-bit)           ; 0           ;
 ; Embedded Multiplier Blocks            ; --          ;
 ; Embedded Multiplier 9-bit elements    ; 1           ;
-; Signed Embedded Multipliers           ; 1           ;
-; Unsigned Embedded Multipliers         ; 0           ;
+; Signed Embedded Multipliers           ; 0           ;
+; Unsigned Embedded Multipliers         ; 1           ;
 ; Mixed Sign Embedded Multipliers       ; 0           ;
 ; Variable Sign Embedded Multipliers    ; 0           ;
 ; Dedicated Input Shift Register Chains ; 0           ;
@@ -1065,12 +1065,12 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; IGNORE_CARRY_BUFFERS                           ; OFF      ; IGNORE_CARRY                                                                                                                                              ;
 ; AUTO_CASCADE_CHAINS                            ; ON       ; AUTO_CASCADE                                                                                                                                              ;
 ; IGNORE_CASCADE_BUFFERS                         ; OFF      ; IGNORE_CASCADE                                                                                                                                            ;
-; LPM_WIDTHA                                     ; 7        ; Untyped                                                                                                                                                   ;
+; LPM_WIDTHA                                     ; 6        ; Untyped                                                                                                                                                   ;
 ; LPM_WIDTHB                                     ; 8        ; Untyped                                                                                                                                                   ;
-; LPM_WIDTHP                                     ; 15       ; Untyped                                                                                                                                                   ;
-; LPM_WIDTHR                                     ; 15       ; Untyped                                                                                                                                                   ;
+; LPM_WIDTHP                                     ; 14       ; Untyped                                                                                                                                                   ;
+; LPM_WIDTHR                                     ; 14       ; Untyped                                                                                                                                                   ;
 ; LPM_WIDTHS                                     ; 1        ; Untyped                                                                                                                                                   ;
-; LPM_REPRESENTATION                             ; SIGNED   ; Untyped                                                                                                                                                   ;
+; LPM_REPRESENTATION                             ; UNSIGNED ; Untyped                                                                                                                                                   ;
 ; LPM_PIPELINE                                   ; 0        ; Untyped                                                                                                                                                   ;
 ; LATENCY                                        ; 0        ; Untyped                                                                                                                                                   ;
 ; INPUT_A_IS_CONSTANT                            ; NO       ; Untyped                                                                                                                                                   ;
@@ -1083,7 +1083,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO     ; Untyped                                                                                                                                                   ;
 ; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0        ; Untyped                                                                                                                                                   ;
 ; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0        ; Untyped                                                                                                                                                   ;
-; CBXI_PARAMETER                                 ; mult_rds ; Untyped                                                                                                                                                   ;
+; CBXI_PARAMETER                                 ; mult_sks ; Untyped                                                                                                                                                   ;
 ; INPUT_A_FIXED_VALUE                            ; Bx       ; Untyped                                                                                                                                                   ;
 ; INPUT_B_FIXED_VALUE                            ; Bx       ; Untyped                                                                                                                                                   ;
 ; USE_AHDL_IMPLEMENTATION                        ; OFF      ; Untyped                                                                                                                                                   ;
@@ -1129,10 +1129,10 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Number of entity instances            ; 1                                                                                                                                                                    ;
 ; Entity Instance                       ; ID1000500B_convolution_coprocessor:IP_convolution_coprocessor|ID1000500B_convolution_coprocessor_core:CORE|convolution_coprocessor_mult:currentZ_mult|lpm_mult:Mult0 ;
-;     -- LPM_WIDTHA                     ; 7                                                                                                                                                                    ;
+;     -- LPM_WIDTHA                     ; 6                                                                                                                                                                    ;
 ;     -- LPM_WIDTHB                     ; 8                                                                                                                                                                    ;
-;     -- LPM_WIDTHP                     ; 15                                                                                                                                                                   ;
-;     -- LPM_REPRESENTATION             ; SIGNED                                                                                                                                                               ;
+;     -- LPM_WIDTHP                     ; 14                                                                                                                                                                   ;
+;     -- LPM_REPRESENTATION             ; UNSIGNED                                                                                                                                                             ;
 ;     -- INPUT_A_IS_CONSTANT            ; NO                                                                                                                                                                   ;
 ;     -- INPUT_B_IS_CONSTANT            ; NO                                                                                                                                                                   ;
 ;     -- USE_EAB                        ; OFF                                                                                                                                                                  ;
@@ -1316,11 +1316,11 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; cycloneiii_io_obuf    ; 8                           ;
 ; cycloneiii_lcell_comb ; 213                         ;
 ;     arith             ; 43                          ;
-;         2 data inputs ; 18                          ;
-;         3 data inputs ; 25                          ;
+;         2 data inputs ; 19                          ;
+;         3 data inputs ; 24                          ;
 ;     normal            ; 170                         ;
-;         1 data inputs ; 6                           ;
-;         2 data inputs ; 31                          ;
+;         1 data inputs ; 7                           ;
+;         2 data inputs ; 30                          ;
 ;         3 data inputs ; 51                          ;
 ;         4 data inputs ; 82                          ;
 ; cycloneiii_mac_mult   ; 1                           ;
@@ -1328,7 +1328,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; cycloneiii_ram_block  ; 24                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 9.00                        ;
-; Average LUT depth     ; 2.78                        ;
+; Average LUT depth     ; 2.79                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1347,7 +1347,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Sun May 19 00:45:56 2024
+    Info: Processing started: Sun May 19 01:00:10 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ipm_ID1000500B_convolution_coprocessor -c ipm_ID1000500B_convolution_coprocessor
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -1431,7 +1431,6 @@ Warning (10030): Net "ROM_structure.data_a" at convolution_coprocessor_simple_ro
 Warning (10030): Net "ROM_structure.waddr_a" at convolution_coprocessor_simple_rom_sv.sv(27) has no driver or initial value, using a default initial value '0' File: /home/joserodriguez/basicblocks/memories/convolution_coprocessor_simple_rom_sv.sv Line: 27
 Warning (10030): Net "ROM_structure.we_a" at convolution_coprocessor_simple_rom_sv.sv(27) has no driver or initial value, using a default initial value '0' File: /home/joserodriguez/basicblocks/memories/convolution_coprocessor_simple_rom_sv.sv Line: 27
 Info (12128): Elaborating entity "convolution_coprocessor_mult" for hierarchy "ID1000500B_convolution_coprocessor:IP_convolution_coprocessor|ID1000500B_convolution_coprocessor_core:CORE|convolution_coprocessor_mult:currentZ_mult" File: /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/src/ID1000500B_convolution_coprocessor_core.sv Line: 282
-Warning (10230): Verilog HDL assignment warning at convolution_coprocessor_mult.sv(71): truncated value with size 17 to match size of target (16) File: /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/src/convolution_coprocessor_mult.sv Line: 71
 Info (12128): Elaborating entity "convolution_coprocessor_realAdder" for hierarchy "ID1000500B_convolution_coprocessor:IP_convolution_coprocessor|ID1000500B_convolution_coprocessor_core:CORE|convolution_coprocessor_realAdder:currentZ_sum" File: /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/src/ID1000500B_convolution_coprocessor_core.sv Line: 289
 Info (12128): Elaborating entity "convolution_coprocessor_register" for hierarchy "ID1000500B_convolution_coprocessor:IP_convolution_coprocessor|ID1000500B_convolution_coprocessor_core:CORE|convolution_coprocessor_register:currentZ_reg" File: /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/src/ID1000500B_convolution_coprocessor_core.sv Line: 301
 Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/db/ipm_ID1000500B_convolution_coprocessor.ram0_convolution_coprocessor_simple_rom_sv_647a8ec5.hdl.mif" contains "don't care" values -- overwriting them with 0s
@@ -1511,17 +1510,17 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/alts
     Info (12023): Found entity 1: altsyncram_ikb1 File: /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/db/altsyncram_ikb1.tdf Line: 28
 Info (12130): Elaborated megafunction instantiation "ID1000500B_convolution_coprocessor:IP_convolution_coprocessor|ID1000500B_convolution_coprocessor_core:CORE|convolution_coprocessor_mult:currentZ_mult|lpm_mult:Mult0" File: /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/src/convolution_coprocessor_mult.sv Line: 69
 Info (12133): Instantiated megafunction "ID1000500B_convolution_coprocessor:IP_convolution_coprocessor|ID1000500B_convolution_coprocessor_core:CORE|convolution_coprocessor_mult:currentZ_mult|lpm_mult:Mult0" with the following parameter: File: /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/src/convolution_coprocessor_mult.sv Line: 69
-    Info (12134): Parameter "LPM_WIDTHA" = "7"
+    Info (12134): Parameter "LPM_WIDTHA" = "6"
     Info (12134): Parameter "LPM_WIDTHB" = "8"
-    Info (12134): Parameter "LPM_WIDTHP" = "15"
-    Info (12134): Parameter "LPM_WIDTHR" = "15"
+    Info (12134): Parameter "LPM_WIDTHP" = "14"
+    Info (12134): Parameter "LPM_WIDTHR" = "14"
     Info (12134): Parameter "LPM_WIDTHS" = "1"
-    Info (12134): Parameter "LPM_REPRESENTATION" = "SIGNED"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "UNSIGNED"
     Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
     Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
     Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
-Info (12021): Found 1 design units, including 1 entities, in source file db/mult_rds.tdf
-    Info (12023): Found entity 1: mult_rds File: /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/db/mult_rds.tdf Line: 29
+Info (12021): Found 1 design units, including 1 entities, in source file db/mult_sks.tdf
+    Info (12023): Found entity 1: mult_sks File: /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/db/mult_sks.tdf Line: 29
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 40 registers lost all their fanouts during netlist optimizations.
 Info (144001): Generated suppressed messages file /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/output_files/ipm_ID1000500B_convolution_coprocessor.map.smsg
@@ -1534,9 +1533,9 @@ Info (21057): Implemented 366 device resources after synthesis - the final resou
     Info (21061): Implemented 323 logic cells
     Info (21064): Implemented 24 RAM segments
     Info (21062): Implemented 1 DSP elements
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 11 warnings
-    Info: Peak virtual memory: 440 megabytes
-    Info: Processing ended: Sun May 19 00:46:07 2024
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 10 warnings
+    Info: Peak virtual memory: 442 megabytes
+    Info: Processing ended: Sun May 19 01:00:21 2024
     Info: Elapsed time: 00:00:11
     Info: Total CPU time (on all processors): 00:00:29
 

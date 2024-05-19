@@ -55,10 +55,10 @@ module convolution_coprocessor_mult
     output [(DATA_WIDTH*2)-1 : 0] re_out
 );
 	
-	reg unsigned [DATA_WIDTH -1: 0] temp_RA;
-	reg unsigned [DATA_WIDTH -1: 0] temp_RB;
+	reg signed [DATA_WIDTH -1: 0] temp_RA;
+	reg signed [DATA_WIDTH -1: 0] temp_RB;
 	
-	wire unsigned [(DATA_WIDTH*2)-1: 0] temp_RE;
+	wire signed [(DATA_WIDTH*2): 0] temp_RE;
 	
 	always@(re_A, re_B)
 	begin
@@ -69,4 +69,4 @@ module convolution_coprocessor_mult
 	assign temp_RE = temp_RA * temp_RB;
 	
 	assign re_out = temp_RE;
-endmodule 
+endmodule
