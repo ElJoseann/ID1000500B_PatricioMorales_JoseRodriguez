@@ -22,7 +22,7 @@ localparam	CYCLE		    = 'd20, // Define the clock work cycle in ns (user)
             //------------------------------------------------------------
             //..................PARAMETERS DEFINED BY THE USER............
             //------------------------------------------------------------
-            SIZE_MEM     = 'd15,  //Size of the memories of the IP dummy
+            SIZE_MEM     = 'd25,  //Size of the memories of the IP dummy
             // ENA_DELAY    = 1'b0, //Enable delay
             // DELAY_MS     = 31'd20, //Delay in ms
             INT_BIT_DONE = 'd0; //Bit corresponding to the Int Done flag.
@@ -83,9 +83,20 @@ task convolution_task;
 
    reg [DATAWIDTH-1:0] result [MAX_SIZE_MEM-1:0];
    reg [(DATAWIDTH*MAX_SIZE_MEM)-1:0] result_packed;
+	
+	reg [DATAWIDTH-1:0] resultExpected [MAX_SIZE_MEM-1:0];
+   reg [(DATAWIDTH*MAX_SIZE_MEM)-1:0] resultExpected_packed;
    
    integer i;
    begin
+		  // Get golden model result
+		  $readmemh("/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/sw/MemoryZ.txt", resultExpected);
+		  $readmemh("/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/sw/MemoryY.txt", dataSet);
+		  
+		  for (i = 0; i < (MAX_SIZE_MEM) ; i=i+1) begin 
+            resultExpected_packed[DATAWIDTH*i+:DATAWIDTH] = resultExpected[i]; 
+        end   
+		  
         // READ IP_ID
         getID(tb_data);
         $display ("%7T Read ID %h", $time, tb_data);
@@ -107,21 +118,26 @@ task convolution_task;
             dataSet[i] = i;          
         end*/
 		  
-		   dataSet[0]  = 8'h2D;
-			dataSet[1]  = 8'h29;
-			dataSet[2]  = 8'hA6;
-			dataSet[3]  = 8'h2F;
-			dataSet[4]  = 8'h4A;
-			dataSet[5]  = 8'hEB;
-			dataSet[6]  = 8'h73;
-			dataSet[7]  = 8'h5B;
-			dataSet[8]  = 8'h02;
-			dataSet[9]  = 8'hFB;
-			dataSet[10] = 8'h71;
-			dataSet[11] = 8'h5F;
-			dataSet[12] = 8'h61;
-			dataSet[13] = 8'h09;
-			dataSet[14] = 8'h13;
+		   /*dataSet[0]   = 8'h41; 
+			dataSet[1]   = 8'h6A;
+			dataSet[2]   = 8'hF4;
+			dataSet[3]   = 8'h44; 
+			dataSet[4]   = 8'h35;
+			dataSet[5]   = 8'h91;
+			dataSet[6]   = 8'h23;
+			dataSet[7]   = 8'h5A;
+			dataSet[8]   = 8'h45;
+			dataSet[9]   = 8'h66;
+			dataSet[10] = 8'h17;
+			dataSet[11] = 8'h46;
+			dataSet[12] = 8'h92;
+			dataSet[13] = 8'hF7;
+			dataSet[14] = 8'h28;
+			dataSet[15] = 8'h86;
+			dataSet[16] = 8'h80;
+			dataSet[17] = 8'h1A;
+			dataSet[18] = 8'hC7;
+			dataSet[19] = 8'hAE;*/
         
         //****CONVERTION TO A SINGLE ARRAY
         for (i = 0; i < (SIZE_MEM) ; i=i+1) begin 
@@ -133,7 +149,7 @@ task convolution_task;
         //DUMMY CONFIGURATION
         //tb_data[31:1] = DELAY_MS; 
         //tb_data[0]    = ENA_DELAY; 
-        tb_data = {{27{1'b0}},5'd15};
+        tb_data = {{27{1'b0}},SIZE_MEM};
         writeConfReg(CSIZE_Y,tb_data,1,0);
 
         // START PROCESS
@@ -178,10 +194,10 @@ task convolution_task;
             result[i]= result_packed[DATAWIDTH*i+:DATAWIDTH]; 
         end
         
-        $display ("\t\tI \t\tO \t\tResult");
+        $display ("\t\tMEMY \t\tGot \t\tExpected \tResult");
         for (i = 0; i < MAX_SIZE_MEM; i=i+1) begin
             //read_interface(MMEM_Z, tb_data);
-            $display ("Read data %2d \t%8h \t%8h \t%s", i, dataSet[i], result[i], (dataSet[i] === result[i] ? "OK": "ERROR"));
+            $display ("Read data %2d \t%8h \t%8h \t%8h \t%s", i, dataSet[i], result[i], resultExpected[i], (resultExpected[i] === result[i] ? "OK": "ERROR"));
         end
         
         // DISABLE INTERRUPTIONS

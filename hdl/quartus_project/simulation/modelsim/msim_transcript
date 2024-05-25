@@ -1,109 +1,287 @@
 # ERROR: No extended dataflow license exists
-# do ipm_ID1000500B_convolution_coprocessor_run_msim_gate_systemverilog.do
-# if {[file exists gate_work]} {
-# 	vdel -lib gate_work -all
+# do ipm_ID1000500B_convolution_coprocessor_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
 # }
-# vlib gate_work
-# vmap work gate_work
+# vlib rtl_work
+# vmap work rtl_work
 # Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
-# vmap work gate_work 
+# vmap work rtl_work 
 # Copying /home/joserodriguez/intelFPGA_lite/20.1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -sv -work work +incdir+. {ipm_ID1000500B_convolution_coprocessor.svo}
+# vlog -vlog01compat -work work +incdir+/home/joserodriguez/basicblocks/aip {/home/joserodriguez/basicblocks/aip/aipModules.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:45:37 on May 19,2024
-# vlog -reportprogress 300 -sv -work work "+incdir+." ipm_ID1000500B_convolution_coprocessor.svo 
+# Start time: 13:29:37 on May 22,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/joserodriguez/basicblocks/aip" /home/joserodriguez/basicblocks/aip/aipModules.v 
+# -- Compiling module aipStatus
+# -- Compiling module aipParametricMux
+# -- Compiling module aipId
+# -- Compiling module aipConfigurationRegister
+# 
+# Top level modules:
+# 	aipStatus
+# 	aipParametricMux
+# 	aipId
+# 	aipConfigurationRegister
+# End time: 13:29:37 on May 22,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/joserodriguez/basicblocks/memories {/home/joserodriguez/basicblocks/memories/simple_dual_port_ram_single_clk.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:29:37 on May 22,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/joserodriguez/basicblocks/memories" /home/joserodriguez/basicblocks/memories/simple_dual_port_ram_single_clk.v 
+# -- Compiling module simple_dual_port_ram_single_clk
+# 
+# Top level modules:
+# 	simple_dual_port_ram_single_clk
+# End time: 13:29:37 on May 22,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/joserodriguez/basicblocks/ipm {/home/joserodriguez/basicblocks/ipm/ipm_register.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:29:37 on May 22,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/joserodriguez/basicblocks/ipm" /home/joserodriguez/basicblocks/ipm/ipm_register.v 
+# -- Compiling module ipm_register
+# 
+# Top level modules:
+# 	ipm_register
+# End time: 13:29:37 on May 22,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/joserodriguez/basicblocks/ipm {/home/joserodriguez/basicblocks/ipm/ipm.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:29:38 on May 22,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/joserodriguez/basicblocks/ipm" /home/joserodriguez/basicblocks/ipm/ipm.v 
+# -- Compiling module ipm
+# 
+# Top level modules:
+# 	ipm
+# End time: 13:29:38 on May 22,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/src {/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/src/ID1000500B_aip.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:29:38 on May 22,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/src" /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/src/ID1000500B_aip.v 
+# -- Compiling module ID1000500B_aip
+# -- Compiling module ID1000500B_aipModules
+# -- Compiling module ID1000500B_aipCtrl
+# 
+# Top level modules:
+# 	ID1000500B_aip
+# End time: 13:29:38 on May 22,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/joserodriguez/basicblocks/sequential {/home/joserodriguez/basicblocks/sequential/convolution_coprocessor_register.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:29:38 on May 22,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/joserodriguez/basicblocks/sequential" /home/joserodriguez/basicblocks/sequential/convolution_coprocessor_register.v 
+# -- Compiling module convolution_coprocessor_register
+# 
+# Top level modules:
+# 	convolution_coprocessor_register
+# End time: 13:29:38 on May 22,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/joserodriguez/basicblocks/arithmetic {/home/joserodriguez/basicblocks/arithmetic/convolution_coprocessor_realAdder.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:29:38 on May 22,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/joserodriguez/basicblocks/arithmetic" /home/joserodriguez/basicblocks/arithmetic/convolution_coprocessor_realAdder.v 
+# -- Compiling module convolution_coprocessor_realAdder
+# 
+# Top level modules:
+# 	convolution_coprocessor_realAdder
+# End time: 13:29:38 on May 22,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/src {/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/src/ID1000500B_convolution_coprocessor.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:29:38 on May 22,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/src" /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/src/ID1000500B_convolution_coprocessor.v 
+# -- Compiling module ID1000500B_convolution_coprocessor
+# 
+# Top level modules:
+# 	ID1000500B_convolution_coprocessor
+# End time: 13:29:38 on May 22,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/src {/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/src/ipm_ID1000500B_convolution_coprocessor.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:29:38 on May 22,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/src" /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/src/ipm_ID1000500B_convolution_coprocessor.v 
 # -- Compiling module ipm_ID1000500B_convolution_coprocessor
 # 
 # Top level modules:
 # 	ipm_ID1000500B_convolution_coprocessor
-# End time: 13:45:37 on May 19,2024, Elapsed time: 0:00:00
+# End time: 13:29:38 on May 22,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/joserodriguez/basicblocks/memories {/home/joserodriguez/basicblocks/memories/convolution_coprocessor_simple_rom_sv.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:29:38 on May 22,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/joserodriguez/basicblocks/memories" /home/joserodriguez/basicblocks/memories/convolution_coprocessor_simple_rom_sv.sv 
+# -- Compiling module convolution_coprocessor_simple_rom_sv
+# 
+# Top level modules:
+# 	convolution_coprocessor_simple_rom_sv
+# End time: 13:29:38 on May 22,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/joserodriguez/basicblocks/arithmetic {/home/joserodriguez/basicblocks/arithmetic/convolution_coprocessor_comparatorLessThan.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:29:38 on May 22,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/joserodriguez/basicblocks/arithmetic" /home/joserodriguez/basicblocks/arithmetic/convolution_coprocessor_comparatorLessThan.sv 
+# -- Compiling module convolution_coprocessor_comparatorLessThan
+# 
+# Top level modules:
+# 	convolution_coprocessor_comparatorLessThan
+# End time: 13:29:38 on May 22,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/src {/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/src/convolution_coprocessor_substractor.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:29:38 on May 22,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/src" /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/src/convolution_coprocessor_substractor.sv 
+# -- Compiling module convolution_coprocessor_substractor
+# 
+# Top level modules:
+# 	convolution_coprocessor_substractor
+# End time: 13:29:38 on May 22,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/src {/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/src/convolution_coprocessor_not.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:29:38 on May 22,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/src" /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/src/convolution_coprocessor_not.sv 
+# -- Compiling module convolution_coprocessor_not
+# 
+# Top level modules:
+# 	convolution_coprocessor_not
+# End time: 13:29:38 on May 22,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/src {/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/src/convolution_coprocessor_mux.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:29:38 on May 22,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/src" /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/src/convolution_coprocessor_mux.sv 
+# -- Compiling module convolution_coprocessor_mux
+# 
+# Top level modules:
+# 	convolution_coprocessor_mux
+# End time: 13:29:38 on May 22,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/src {/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/src/convolution_coprocessor_mult.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:29:38 on May 22,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/src" /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/src/convolution_coprocessor_mult.sv 
+# -- Compiling module convolution_coprocessor_mult
+# 
+# Top level modules:
+# 	convolution_coprocessor_mult
+# End time: 13:29:38 on May 22,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/src {/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/src/convolution_coprocessor_fsm.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:29:38 on May 22,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/src" /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/src/convolution_coprocessor_fsm.sv 
+# -- Compiling module convolution_coprocessor_fsm
+# 
+# Top level modules:
+# 	convolution_coprocessor_fsm
+# End time: 13:29:38 on May 22,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/src {/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/src/convolution_coprocessor_and.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:29:38 on May 22,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/src" /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/src/convolution_coprocessor_and.sv 
+# -- Compiling module convolution_coprocessor_and
+# 
+# Top level modules:
+# 	convolution_coprocessor_and
+# End time: 13:29:38 on May 22,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/src {/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/src/ID1000500B_convolution_coprocessor_core.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:29:38 on May 22,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/src" /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/src/ID1000500B_convolution_coprocessor_core.sv 
+# -- Compiling module ID1000500B_convolution_coprocessor_core
+# 
+# Top level modules:
+# 	ID1000500B_convolution_coprocessor_core
+# End time: 13:29:38 on May 22,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../simulation {/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../simulation/ID1000500BTB.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:45:37 on May 19,2024
+# Start time: 13:29:38 on May 22,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../simulation" /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../simulation/ID1000500BTB.v 
 # -- Compiling module ID1000500BTB
 # 
 # Top level modules:
 # 	ID1000500BTB
-# End time: 13:45:37 on May 19,2024, Elapsed time: 0:00:00
+# End time: 13:29:38 on May 22,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../src {/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../src/convolution_coprocessor.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:45:37 on May 19,2024
+# Start time: 13:29:38 on May 22,2024
 # vlog -reportprogress 300 -sv -work work "+incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../src" /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../src/convolution_coprocessor.sv 
 # -- Compiling module ID1000500B_convolution_coprocessor_core
 # 
 # Top level modules:
 # 	ID1000500B_convolution_coprocessor_core
-# End time: 13:45:37 on May 19,2024, Elapsed time: 0:00:00
+# End time: 13:29:38 on May 22,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../src {/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../src/convolution_coprocessor_and.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:45:37 on May 19,2024
+# Start time: 13:29:38 on May 22,2024
 # vlog -reportprogress 300 -sv -work work "+incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../src" /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../src/convolution_coprocessor_and.sv 
 # -- Compiling module convolution_coprocessor_and
 # 
 # Top level modules:
 # 	convolution_coprocessor_and
-# End time: 13:45:37 on May 19,2024, Elapsed time: 0:00:00
+# End time: 13:29:38 on May 22,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../src {/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../src/convolution_coprocessor_fsm.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:45:37 on May 19,2024
+# Start time: 13:29:38 on May 22,2024
 # vlog -reportprogress 300 -sv -work work "+incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../src" /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../src/convolution_coprocessor_fsm.sv 
 # -- Compiling module convolution_coprocessor_fsm
 # 
 # Top level modules:
 # 	convolution_coprocessor_fsm
-# End time: 13:45:37 on May 19,2024, Elapsed time: 0:00:00
+# End time: 13:29:38 on May 22,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../src {/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../src/convolution_coprocessor_mult.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:45:37 on May 19,2024
+# Start time: 13:29:38 on May 22,2024
 # vlog -reportprogress 300 -sv -work work "+incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../src" /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../src/convolution_coprocessor_mult.sv 
 # -- Compiling module convolution_coprocessor_mult
 # 
 # Top level modules:
 # 	convolution_coprocessor_mult
-# End time: 13:45:38 on May 19,2024, Elapsed time: 0:00:01
+# End time: 13:29:38 on May 22,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../src {/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../src/convolution_coprocessor_mux.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:45:38 on May 19,2024
+# Start time: 13:29:38 on May 22,2024
 # vlog -reportprogress 300 -sv -work work "+incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../src" /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../src/convolution_coprocessor_mux.sv 
 # -- Compiling module convolution_coprocessor_mux
 # 
 # Top level modules:
 # 	convolution_coprocessor_mux
-# End time: 13:45:38 on May 19,2024, Elapsed time: 0:00:00
+# End time: 13:29:38 on May 22,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../src {/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../src/convolution_coprocessor_not.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:45:38 on May 19,2024
+# Start time: 13:29:38 on May 22,2024
 # vlog -reportprogress 300 -sv -work work "+incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../src" /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../src/convolution_coprocessor_not.sv 
 # -- Compiling module convolution_coprocessor_not
 # 
 # Top level modules:
 # 	convolution_coprocessor_not
-# End time: 13:45:38 on May 19,2024, Elapsed time: 0:00:00
+# End time: 13:29:39 on May 22,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../src {/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../src/convolution_coprocessor_substractor.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:45:38 on May 19,2024
+# Start time: 13:29:39 on May 22,2024
 # vlog -reportprogress 300 -sv -work work "+incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../src" /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../src/convolution_coprocessor_substractor.sv 
 # -- Compiling module convolution_coprocessor_substractor
 # 
 # Top level modules:
 # 	convolution_coprocessor_substractor
-# End time: 13:45:38 on May 19,2024, Elapsed time: 0:00:00
+# End time: 13:29:39 on May 22,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../src {/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../src/ID1000500B_aip.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:45:38 on May 19,2024
+# Start time: 13:29:39 on May 22,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../src" /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../src/ID1000500B_aip.v 
 # -- Compiling module ID1000500B_aip
 # -- Compiling module ID1000500B_aipModules
@@ -111,45 +289,302 @@
 # 
 # Top level modules:
 # 	ID1000500B_aip
-# End time: 13:45:38 on May 19,2024, Elapsed time: 0:00:00
+# End time: 13:29:39 on May 22,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../src {/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../src/ID1000500B_convolution_coprocessor.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:45:38 on May 19,2024
+# Start time: 13:29:39 on May 22,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../src" /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../src/ID1000500B_convolution_coprocessor.v 
 # -- Compiling module ID1000500B_convolution_coprocessor
 # 
 # Top level modules:
 # 	ID1000500B_convolution_coprocessor
-# End time: 13:45:38 on May 19,2024, Elapsed time: 0:00:00
+# End time: 13:29:39 on May 22,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../src {/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../src/ID1000500B_convolution_coprocessor_core.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:45:38 on May 19,2024
+# Start time: 13:29:39 on May 22,2024
 # vlog -reportprogress 300 -sv -work work "+incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../src" /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../src/ID1000500B_convolution_coprocessor_core.sv 
 # -- Compiling module ID1000500B_convolution_coprocessor_core
 # 
 # Top level modules:
 # 	ID1000500B_convolution_coprocessor_core
-# End time: 13:45:38 on May 19,2024, Elapsed time: 0:00:00
+# End time: 13:29:39 on May 22,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../src {/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../src/ipm_ID1000500B_convolution_coprocessor.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:45:38 on May 19,2024
+# Start time: 13:29:39 on May 22,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../src" /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../src/ipm_ID1000500B_convolution_coprocessor.v 
 # -- Compiling module ipm_ID1000500B_convolution_coprocessor
 # 
 # Top level modules:
 # 	ipm_ID1000500B_convolution_coprocessor
-# End time: 13:45:38 on May 19,2024, Elapsed time: 0:00:00
+# End time: 13:29:39 on May 22,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../../../basicblocks/arithmetic {/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../../../basicblocks/arithmetic/convolution_coprocessor_comparatorLessThan.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 13:45:38 on May 19,2024
+# Start time: 13:29:39 on May 22,2024
 # vlog -reportprogress 300 -sv -work work "+incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../../../basicblocks/arithmetic" /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../../../basicblocks/arithmetic/convolution_coprocessor_comparatorLessThan.sv 
 # -- Compiling module convolution_coprocessor_comparatorLessThan
 # 
 # Top level modules:
 # 	convolution_coprocessor_comparatorLessThan
-# End time: 13:45:38 on May 19,2024, Elapsed time: 0:00:00
+# End time: 13:29:39 on May 22,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../../../basicblocks/arithmetic {/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../../../basicblocks/arithmetic/convolution_coprocessor_realAdder.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:29:39 on May 22,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../../../basicblocks/arithmetic" /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../../../basicblocks/arithmetic/convolution_coprocessor_realAdder.v 
+# -- Compiling module convolution_coprocessor_realAdder
+# 
+# Top level modules:
+# 	convolution_coprocessor_realAdder
+# End time: 13:29:39 on May 22,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../../../basicblocks/ipm {/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../../../basicblocks/ipm/ipm.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:29:39 on May 22,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../../../basicblocks/ipm" /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../../../basicblocks/ipm/ipm.v 
+# -- Compiling module ipm
+# 
+# Top level modules:
+# 	ipm
+# End time: 13:29:39 on May 22,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../../../basicblocks/ipm {/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../../../basicblocks/ipm/ipm_register.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:29:39 on May 22,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../../../basicblocks/ipm" /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../../../basicblocks/ipm/ipm_register.v 
+# -- Compiling module ipm_register
+# 
+# Top level modules:
+# 	ipm_register
+# End time: 13:29:39 on May 22,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../../../basicblocks/memories {/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../../../basicblocks/memories/convolution_coprocessor_simple_rom_sv.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:29:39 on May 22,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../../../basicblocks/memories" /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../../../basicblocks/memories/convolution_coprocessor_simple_rom_sv.sv 
+# -- Compiling module convolution_coprocessor_simple_rom_sv
+# 
+# Top level modules:
+# 	convolution_coprocessor_simple_rom_sv
+# End time: 13:29:39 on May 22,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../../../basicblocks/memories {/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../../../basicblocks/memories/simple_dual_port_ram_single_clk.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:29:39 on May 22,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../../../basicblocks/memories" /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../../../basicblocks/memories/simple_dual_port_ram_single_clk.v 
+# -- Compiling module simple_dual_port_ram_single_clk
+# 
+# Top level modules:
+# 	simple_dual_port_ram_single_clk
+# End time: 13:29:39 on May 22,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../../../basicblocks/sequential {/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../../../basicblocks/sequential/convolution_coprocessor_register.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:29:39 on May 22,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../../../basicblocks/sequential" /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../../../basicblocks/sequential/convolution_coprocessor_register.v 
+# -- Compiling module convolution_coprocessor_register
+# 
+# Top level modules:
+# 	convolution_coprocessor_register
+# End time: 13:29:39 on May 22,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../../../basicblocks/aip {/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../../../basicblocks/aip/aipModules.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:29:39 on May 22,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../../../basicblocks/aip" /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../../../basicblocks/aip/aipModules.v 
+# -- Compiling module aipStatus
+# -- Compiling module aipParametricMux
+# -- Compiling module aipId
+# -- Compiling module aipConfigurationRegister
+# 
+# Top level modules:
+# 	aipStatus
+# 	aipParametricMux
+# 	aipId
+# 	aipConfigurationRegister
+# End time: 13:29:39 on May 22,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  ID1000500BTB
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" ID1000500BTB 
+# Start time: 13:29:39 on May 22,2024
+# Loading work.ID1000500BTB
+# Loading work.ID1000500B_convolution_coprocessor
+# Loading work.ID1000500B_aip
+# Loading work.ID1000500B_aipModules
+# Loading work.aipConfigurationRegister
+# Loading work.ID1000500B_aipCtrl
+# Loading work.aipParametricMux
+# Loading work.aipId
+# Loading work.aipStatus
+# Loading sv_std.std
+# Loading work.ID1000500B_convolution_coprocessor_core
+# Loading work.convolution_coprocessor_fsm
+# Loading work.convolution_coprocessor_realAdder
+# Loading work.convolution_coprocessor_mux
+# Loading work.convolution_coprocessor_register
+# Loading work.convolution_coprocessor_substractor
+# Loading work.convolution_coprocessor_comparatorLessThan
+# Loading work.convolution_coprocessor_not
+# Loading work.convolution_coprocessor_and
+# Loading work.convolution_coprocessor_simple_rom_sv
+# Loading work.convolution_coprocessor_mult
+# Loading work.simple_dual_port_ram_single_clk
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 10 us
+#                    0 << Start Simulation >>
+#  100000 Read ID 1000500b
+#  160000 Read STATUS 00000000
+# 1000000 Sending start
+# 8240000 Done flag detected!
+# 8300000 Read STATUS 00010001
+# 8480000 Read STATUS 00010000
+# 		MEMY 		Got 		Expected 	Result
+# Read data  0 	0000000e 	00000038 	00000038 	   OK
+# Read data  1 	00000024 	00000330 	00000330 	   OK
+# Read data  2 	00000026 	00000862 	00000862 	   OK
+# Read data  3 	00000025 	00000aec 	00000aec 	   OK
+# Read data  4 	0000002f 	00000dfa 	00000dfa 	   OK
+# Read data  5 	0000001e 	000012db 	000012db 	   OK
+# Read data  6 	00000025 	000010c7 	000010c7 	   OK
+# Read data  7 	0000002f 	0000113a 	0000113a 	   OK
+# Read data  8 	00000011 	000013f9 	000013f9 	   OK
+# Read data  9 	00000032 	00000d5b 	00000d5b 	   OK
+# Read data 10 	0000000c 	00001227 	00001227 	   OK
+# Read data 11 	00000008 	00000dba 	00000dba 	   OK
+# Read data 12 	00000000 	000006de 	000006de 	   OK
+# Read data 13 	00000004 	0000088c 	0000088c 	   OK
+# Read data 14 	0000002c 	00000388 	00000388 	   OK
+# Read data 15 	00000024 	00000a4c 	00000a4c 	   OK
+# Read data 16 	00000004 	00000a3c 	00000a3c 	   OK
+# Read data 17 	00000020 	0000063c 	0000063c 	   OK
+# Read data 18 	00000023 	00000ec8 	00000ec8 	   OK
+# Read data 19 	00000008 	00000e90 	00000e90 	   OK
+# Read data 20 	0000001b 	0000065d 	0000065d 	   OK
+# Read data 21 	0000002b 	00000c72 	00000c72 	   OK
+# Read data 22 	0000002f 	0000104f 	0000104f 	   OK
+# Read data 23 	0000001a 	00000ea7 	00000ea7 	   OK
+# Read data 24 	00000024 	00000e9d 	00000e9d 	   OK
+# Read data 25 	xxxxxxxx 	000010e6 	000010e6 	   OK
+# Read data 26 	xxxxxxxx 	00000aaa 	00000aaa 	   OK
+# Read data 27 	xxxxxxxx 	00000544 	00000544 	   OK
+# Read data 28 	xxxxxxxx 	00000558 	00000558 	   OK
+# Read data 29 	xxxxxxxx 	xxxxxxxx 	xxxxxxxx 	   OK
+# Read data 30 	xxxxxxxx 	xxxxxxxx 	xxxxxxxx 	   OK
+# Read data 31 	xxxxxxxx 	xxxxxxxx 	xxxxxxxx 	   OK
+# Read data 32 	xxxxxxxx 	xxxxxxxx 	xxxxxxxx 	   OK
+# Read data 33 	xxxxxxxx 	xxxxxxxx 	xxxxxxxx 	   OK
+# Read data 34 	xxxxxxxx 	xxxxxxxx 	xxxxxxxx 	   OK
+# Read data 35 	xxxxxxxx 	xxxxxxxx 	xxxxxxxx 	   OK
+# Read data 36 	xxxxxxxx 	xxxxxxxx 	xxxxxxxx 	   OK
+# Read data 37 	xxxxxxxx 	xxxxxxxx 	xxxxxxxx 	   OK
+# Read data 38 	xxxxxxxx 	xxxxxxxx 	xxxxxxxx 	   OK
+# Read data 39 	xxxxxxxx 	xxxxxxxx 	xxxxxxxx 	   OK
+# Read data 40 	xxxxxxxx 	xxxxxxxx 	xxxxxxxx 	   OK
+# Read data 41 	xxxxxxxx 	xxxxxxxx 	xxxxxxxx 	   OK
+# Read data 42 	xxxxxxxx 	xxxxxxxx 	xxxxxxxx 	   OK
+# Read data 43 	xxxxxxxx 	xxxxxxxx 	xxxxxxxx 	   OK
+# Read data 44 	xxxxxxxx 	xxxxxxxx 	xxxxxxxx 	   OK
+# Read data 45 	xxxxxxxx 	xxxxxxxx 	xxxxxxxx 	   OK
+# Read data 46 	xxxxxxxx 	xxxxxxxx 	xxxxxxxx 	   OK
+# Read data 47 	xxxxxxxx 	xxxxxxxx 	xxxxxxxx 	   OK
+# Read data 48 	xxxxxxxx 	xxxxxxxx 	xxxxxxxx 	   OK
+# Read data 49 	xxxxxxxx 	xxxxxxxx 	xxxxxxxx 	   OK
+# Read data 50 	xxxxxxxx 	xxxxxxxx 	xxxxxxxx 	   OK
+# Read data 51 	xxxxxxxx 	xxxxxxxx 	xxxxxxxx 	   OK
+# Read data 52 	xxxxxxxx 	xxxxxxxx 	xxxxxxxx 	   OK
+# Read data 53 	xxxxxxxx 	xxxxxxxx 	xxxxxxxx 	   OK
+# Read data 54 	xxxxxxxx 	xxxxxxxx 	xxxxxxxx 	   OK
+# Read data 55 	xxxxxxxx 	xxxxxxxx 	xxxxxxxx 	   OK
+# Read data 56 	xxxxxxxx 	xxxxxxxx 	xxxxxxxx 	   OK
+# Read data 57 	xxxxxxxx 	xxxxxxxx 	xxxxxxxx 	   OK
+# Read data 58 	xxxxxxxx 	xxxxxxxx 	xxxxxxxx 	   OK
+# Read data 59 	xxxxxxxx 	xxxxxxxx 	xxxxxxxx 	   OK
+# Read data 60 	xxxxxxxx 	xxxxxxxx 	xxxxxxxx 	   OK
+# Read data 61 	xxxxxxxx 	xxxxxxxx 	xxxxxxxx 	   OK
+# Read data 62 	xxxxxxxx 	xxxxxxxx 	xxxxxxxx 	   OK
+# Read data 63 	xxxxxxxx 	xxxxxxxx 	xxxxxxxx 	   OK
+restart
+run 10us
+#                    0 << Start Simulation >>
+#  100000 Read ID 1000500b
+#  160000 Read STATUS 00000000
+# 1000000 Sending start
+# 8240000 Done flag detected!
+# 8300000 Read STATUS 00010001
+# 8480000 Read STATUS 00010000
+# 		MEMY 		Got 		Expected 	Result
+# Read data  0 	00000015 	00000054 	00000054 	   OK
+# Read data  1 	00000018 	00000450 	00000450 	   OK
+# Read data  2 	0000001a 	00000677 	00000677 	   OK
+# Read data  3 	0000001d 	000007ee 	000007ee 	   OK
+# Read data  4 	00000031 	00000c30 	00000c30 	   OK
+# Read data  5 	00000012 	00001033 	00001033 	   OK
+# Read data  6 	00000006 	00000c19 	00000c19 	   OK
+# Read data  7 	0000000f 	000008ea 	000008ea 	   OK
+# Read data  8 	00000009 	00000b60 	00000b60 	   OK
+# Read data  9 	0000001b 	00000621 	00000621 	   OK
+# Read data 10 	0000001a 	0000079d 	0000079d 	   OK
+# Read data 11 	0000000e 	000009ad 	000009ad 	   OK
+# Read data 12 	0000000a 	0000071a 	0000071a 	   OK
+# Read data 13 	00000022 	00000878 	00000878 	   OK
+# Read data 14 	00000024 	00000c16 	00000c16 	   OK
+# Read data 15 	00000014 	00000c0e 	00000c0e 	   OK
+# Read data 16 	00000024 	000009cc 	000009cc 	   OK
+# Read data 17 	00000019 	00000f14 	00000f14 	   OK
+# Read data 18 	0000002d 	00000e30 	00000e30 	   OK
+# Read data 19 	00000022 	00000f33 	00000f33 	   OK
+# Read data 20 	0000000d 	0000103d 	0000103d 	   OK
+# Read data 21 	00000027 	00000b0a 	00000b0a 	   OK
+# Read data 22 	00000015 	0000109d 	0000109d 	   OK
+# Read data 23 	0000001a 	00000ccb 	00000ccb 	   OK
+# Read data 24 	00000030 	00000aa3 	00000aa3 	   OK
+# Read data 25 	xxxxxxxx 	0000118a 	0000118a 	   OK
+# Read data 26 	xxxxxxxx 	000007b2 	000007b2 	   OK
+# Read data 27 	xxxxxxxx 	000005bc 	000005bc 	   OK
+# Read data 28 	xxxxxxxx 	00000720 	00000720 	   OK
+# Read data 29 	xxxxxxxx 	xxxxxxxx 	xxxxxxxx 	   OK
+# Read data 30 	xxxxxxxx 	xxxxxxxx 	xxxxxxxx 	   OK
+# Read data 31 	xxxxxxxx 	xxxxxxxx 	xxxxxxxx 	   OK
+# Read data 32 	xxxxxxxx 	xxxxxxxx 	xxxxxxxx 	   OK
+# Read data 33 	xxxxxxxx 	xxxxxxxx 	xxxxxxxx 	   OK
+# Read data 34 	xxxxxxxx 	xxxxxxxx 	xxxxxxxx 	   OK
+# Read data 35 	xxxxxxxx 	xxxxxxxx 	xxxxxxxx 	   OK
+# Read data 36 	xxxxxxxx 	xxxxxxxx 	xxxxxxxx 	   OK
+# Read data 37 	xxxxxxxx 	xxxxxxxx 	xxxxxxxx 	   OK
+# Read data 38 	xxxxxxxx 	xxxxxxxx 	xxxxxxxx 	   OK
+# Read data 39 	xxxxxxxx 	xxxxxxxx 	xxxxxxxx 	   OK
+# Read data 40 	xxxxxxxx 	xxxxxxxx 	xxxxxxxx 	   OK
+# Read data 41 	xxxxxxxx 	xxxxxxxx 	xxxxxxxx 	   OK
+# Read data 42 	xxxxxxxx 	xxxxxxxx 	xxxxxxxx 	   OK
+# Read data 43 	xxxxxxxx 	xxxxxxxx 	xxxxxxxx 	   OK
+# Read data 44 	xxxxxxxx 	xxxxxxxx 	xxxxxxxx 	   OK
+# Read data 45 	xxxxxxxx 	xxxxxxxx 	xxxxxxxx 	   OK
+# Read data 46 	xxxxxxxx 	xxxxxxxx 	xxxxxxxx 	   OK
+# Read data 47 	xxxxxxxx 	xxxxxxxx 	xxxxxxxx 	   OK
+# Read data 48 	xxxxxxxx 	xxxxxxxx 	xxxxxxxx 	   OK
+# Read data 49 	xxxxxxxx 	xxxxxxxx 	xxxxxxxx 	   OK
+# Read data 50 	xxxxxxxx 	xxxxxxxx 	xxxxxxxx 	   OK
+# Read data 51 	xxxxxxxx 	xxxxxxxx 	xxxxxxxx 	   OK
+# Read data 52 	xxxxxxxx 	xxxxxxxx 	xxxxxxxx 	   OK
+# Read data 53 	xxxxxxxx 	xxxxxxxx 	xxxxxxxx 	   OK
+# Read data 54 	xxxxxxxx 	xxxxxxxx 	xxxxxxxx 	   OK
+# Read data 55 	xxxxxxxx 	xxxxxxxx 	xxxxxxxx 	   OK
+# Read data 56 	xxxxxxxx 	xxxxxxxx 	xxxxxxxx 	   OK
+# Read data 57 	xxxxxxxx 	xxxxxxxx 	xxxxxxxx 	   OK
+# Read data 58 	xxxxxxxx 	xxxxxxxx 	xxxxxxxx 	   OK
+# Read data 59 	xxxxxxxx 	xxxxxxxx 	xxxxxxxx 	   OK
+# Read data 60 	xxxxxxxx 	xxxxxxxx 	xxxxxxxx 	   OK
+# Read data 61 	xxxxxxxx 	xxxxxxxx 	xxxxxxxx 	   OK
+# Read data 62 	xxxxxxxx 	xxxxxxxx 	xxxxxxxx 	   OK
+# Read data 63 	xxxxxxxx 	xxxxxxxx 	xxxxxxxx 	   OK
+# End time: 13:30:57 on May 22,2024, Elapsed time: 0:01:18
 # Errors: 0, Warnings: 0

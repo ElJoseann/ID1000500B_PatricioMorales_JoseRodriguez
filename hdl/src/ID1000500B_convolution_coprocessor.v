@@ -99,5 +99,7 @@ module ID1000500B_convolution_coprocessor
 		  .done(int_IPcore[0])
 		  
     );
+	 
+	 assign data_MemOut0[31:16] = {16{1'b0}};
 
 endmodule
