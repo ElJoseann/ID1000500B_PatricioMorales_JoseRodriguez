@@ -18,7 +18,7 @@ void printSignal(const char* signalName, int *signal, int sizeSignal);
 void create_file(const char* fileName, int* signal, int sizeSignal, int width);
 
 int main(){
-    int sizeY = 25;
+    int sizeY = 10;
     int sizeH = 5;
     int sizeZ = sizeY + sizeH - 1;
     int* y = NULL;

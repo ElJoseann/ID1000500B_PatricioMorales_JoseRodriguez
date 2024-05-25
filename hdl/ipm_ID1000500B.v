@@ -1,7 +1,7 @@
 // ipm <-> ID00001001_dummy
 
 
-module ipm_ID1000500B_convolution_coprocessor
+module ipm_ID1000500B
 (
     // Main
     input clk,

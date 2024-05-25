@@ -22,10 +22,9 @@ localparam	CYCLE		    = 'd20, // Define the clock work cycle in ns (user)
             //------------------------------------------------------------
             //..................PARAMETERS DEFINED BY THE USER............
             //------------------------------------------------------------
-            SIZE_MEM     = 'd25,  //Size of the memories of the IP dummy
-            // ENA_DELAY    = 1'b0, //Enable delay
-            // DELAY_MS     = 31'd20, //Delay in ms
-            INT_BIT_DONE = 'd0; //Bit corresponding to the Int Done flag.
+            SIZE_MEM     = 'd10,  //Size of signal Y
+            INT_BIT_DONE = 'd0,   //Bit corresponding to the Int Done flag.
+				SIZE_MEM_Z   = SIZE_MEM + 'd5 - 1;
             
 
 
@@ -81,19 +80,19 @@ task convolution_task;
    reg [DATAWIDTH-1:0] dataSet [SIZE_MEM-1:0];
    reg [(DATAWIDTH*SIZE_MEM)-1:0] dataSet_packed;
 
-   reg [DATAWIDTH-1:0] result [MAX_SIZE_MEM-1:0];
-   reg [(DATAWIDTH*MAX_SIZE_MEM)-1:0] result_packed;
+   reg [DATAWIDTH-1:0] result [SIZE_MEM_Z-1:0];
+   reg [(DATAWIDTH*SIZE_MEM_Z)-1:0] result_packed;
 	
-	reg [DATAWIDTH-1:0] resultExpected [MAX_SIZE_MEM-1:0];
-   reg [(DATAWIDTH*MAX_SIZE_MEM)-1:0] resultExpected_packed;
+	reg [DATAWIDTH-1:0] resultExpected [SIZE_MEM_Z-1:0];
+   reg [(DATAWIDTH*SIZE_MEM_Z)-1:0] resultExpected_packed;
    
    integer i;
    begin
-		  // Get golden model result
+		  // Get golden model result and data randomly generated 
 		  $readmemh("/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/sw/MemoryZ.txt", resultExpected);
 		  $readmemh("/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/sw/MemoryY.txt", dataSet);
 		  
-		  for (i = 0; i < (MAX_SIZE_MEM) ; i=i+1) begin 
+		  for (i = 0; i < (SIZE_MEM_Z) ; i=i+1) begin 
             resultExpected_packed[DATAWIDTH*i+:DATAWIDTH] = resultExpected[i]; 
         end   
 		  
@@ -109,36 +108,6 @@ task convolution_task;
         //FOR ENABLING INTERRUPTIONS
         enableINT(INT_BIT_DONE);
         
-
-        // RANDOM DATA GENERATION
-        /*for (i = 0; i < SIZE_MEM; i=i+1) begin //generating random data
-            dataSet[i] = $urandom%100;          
-        end   */  
-		  /*for (i = 0; i < SIZE_MEM; i=i+1) begin //generating random data
-            dataSet[i] = i;          
-        end*/
-		  
-		   /*dataSet[0]   = 8'h41; 
-			dataSet[1]   = 8'h6A;
-			dataSet[2]   = 8'hF4;
-			dataSet[3]   = 8'h44; 
-			dataSet[4]   = 8'h35;
-			dataSet[5]   = 8'h91;
-			dataSet[6]   = 8'h23;
-			dataSet[7]   = 8'h5A;
-			dataSet[8]   = 8'h45;
-			dataSet[9]   = 8'h66;
-			dataSet[10] = 8'h17;
-			dataSet[11] = 8'h46;
-			dataSet[12] = 8'h92;
-			dataSet[13] = 8'hF7;
-			dataSet[14] = 8'h28;
-			dataSet[15] = 8'h86;
-			dataSet[16] = 8'h80;
-			dataSet[17] = 8'h1A;
-			dataSet[18] = 8'hC7;
-			dataSet[19] = 8'hAE;*/
-        
         //****CONVERTION TO A SINGLE ARRAY
         for (i = 0; i < (SIZE_MEM) ; i=i+1) begin 
             dataSet_packed[DATAWIDTH*i+:DATAWIDTH] = dataSet[i]; 
@@ -146,9 +115,7 @@ task convolution_task;
         
         writeMem(MMEM_Y, dataSet_packed, SIZE_MEM,0);
         
-        //DUMMY CONFIGURATION
-        //tb_data[31:1] = DELAY_MS; 
-        //tb_data[0]    = ENA_DELAY; 
+        //DUMMY CONFIGURATION 
         tb_data = {{27{1'b0}},SIZE_MEM};
         writeConfReg(CSIZE_Y,tb_data,1,0);
 
@@ -188,14 +155,14 @@ task convolution_task;
 
 
         // READ MEM OUT
-        readMem(MMEM_Z, result_packed, MAX_SIZE_MEM, 0);
+        readMem(MMEM_Z, result_packed, SIZE_MEM_Z, 0);
         //*****CONVERTION TO A 2D ARRAY
-        for (i = 0; i < (MAX_SIZE_MEM) ; i=i+1) begin 
+        for (i = 0; i < (SIZE_MEM_Z) ; i=i+1) begin 
             result[i]= result_packed[DATAWIDTH*i+:DATAWIDTH]; 
         end
         
-        $display ("\t\tMEMY \t\tGot \t\tExpected \tResult");
-        for (i = 0; i < MAX_SIZE_MEM; i=i+1) begin
+        $display ("\t\tMEMY \t  Got \t    Expected \tResult");
+        for (i = 0; i < SIZE_MEM_Z; i=i+1) begin
             //read_interface(MMEM_Z, tb_data);
             $display ("Read data %2d \t%8h \t%8h \t%8h \t%s", i, dataSet[i], result[i], resultExpected[i], (resultExpected[i] === result[i] ? "OK": "ERROR"));
         end
