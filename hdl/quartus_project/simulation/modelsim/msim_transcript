@@ -484,3 +484,5 @@ run 10us
 # ** Note: $stop    : /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../simulation/ID1000500BTB.v(72)
 #    Time: 5180 ns  Iteration: 0  Instance: /ID1000500BTB
 # Break in Module ID1000500BTB at /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../simulation/ID1000500BTB.v line 72
+# End time: 00:47:58 on May 25,2024, Elapsed time: 0:02:01
+# Errors: 0, Warnings: 0
