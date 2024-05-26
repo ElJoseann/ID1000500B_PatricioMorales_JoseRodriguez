@@ -18,7 +18,7 @@ void printSignal(const char* signalName, int *signal, int sizeSignal);
 void create_file(const char* fileName, int* signal, int sizeSignal, int width);
 
 int main(){
-    int sizeY = 10;
+    int sizeY = 25;
     int sizeH = 5;
     int sizeZ = sizeY + sizeH - 1;
     int* y = NULL;
@@ -45,6 +45,10 @@ int main(){
     create_file("MemoryY.txt", y, sizeY, 8);
     create_file("MemoryH.txt", h, sizeH, 8);
     create_file("MemoryZ.txt", z, sizeZ, 16);
+	
+    create_file("MemoryY.ipd", y, sizeY, 8);
+    create_file("MemoryH.ipd", h, sizeH, 8);
+    create_file("MemoryZ.ipd", z, sizeZ, 16);
     // Print Signals
     printSignal("Y", y, sizeY);
     printSignal("H", h, sizeH);
