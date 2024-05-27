@@ -10,7 +10,7 @@ z2
 cModel Technology
 Z0 d/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/simulation/modelsim
 vaipConfigurationRegister
-Z1 !s110 1716619556
+Z1 !s110 1716774385
 !i10b 1
 !s100 e0GSGzUhKL9AN[0NoPcoA1
 Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -20,13 +20,13 @@ R0
 Z4 w1716089400
 Z5 8/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../../../basicblocks/aip/aipModules.v
 Z6 F/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../../../basicblocks/aip/aipModules.v
-!i122 30
+!i122 29
 L0 128 53
 Z7 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z8 !s108 1716619556.000000
+Z8 !s108 1716774385.000000
 Z9 !s107 /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../../../basicblocks/aip/aipModules.v|
 Z10 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../../../basicblocks/aip|/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../../../basicblocks/aip/aipModules.v|
 !i113 1
@@ -45,7 +45,7 @@ R0
 R4
 R5
 R6
-!i122 30
+!i122 29
 L0 112 15
 R7
 r1
@@ -70,7 +70,7 @@ R0
 R4
 R5
 R6
-!i122 30
+!i122 29
 L0 86 25
 R7
 r1
@@ -95,7 +95,7 @@ R0
 R4
 R5
 R6
-!i122 30
+!i122 29
 L0 17 68
 R7
 r1
@@ -122,7 +122,7 @@ R0
 w1714639196
 8/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../basic_blocks/convolution_coprocessor_and.sv
 F/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../basic_blocks/convolution_coprocessor_and.sv
-!i122 31
+!i122 30
 L0 14 10
 R7
 r1
@@ -201,7 +201,7 @@ R0
 w1716102007
 8/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../basic_blocks/convolution_coprocessor_mult.sv
 F/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../basic_blocks/convolution_coprocessor_mult.sv
-!i122 32
+!i122 31
 Z18 L0 49 24
 R7
 r1
@@ -227,7 +227,7 @@ R0
 w1714632407
 8/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../basic_blocks/convolution_coprocessor_mux.sv
 F/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../basic_blocks/convolution_coprocessor_mux.sv
-!i122 33
+!i122 32
 L0 11 26
 R7
 r1
@@ -242,7 +242,7 @@ R16
 R13
 vconvolution_coprocessor_not
 R14
-Z19 !s110 1716619557
+Z19 !s110 1716774386
 !i10b 1
 !s100 BMiAH8l`TF``4f=7z>e=h3
 R2
@@ -253,7 +253,7 @@ R0
 w1714638573
 8/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../basic_blocks/convolution_coprocessor_not.sv
 F/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../basic_blocks/convolution_coprocessor_not.sv
-!i122 34
+!i122 33
 L0 14 9
 R7
 r1
@@ -292,28 +292,28 @@ R11
 R13
 nconvolution_coprocessor_real@adder
 vconvolution_coprocessor_register
-R1
+!s110 1716774384
 !i10b 1
 !s100 WYjmF52BT8VDRVbOGEdiz1
 R2
-Ii>n0I]0Em:D4J`fY?i0b=2
+ITO5So<4h>X`B1A8@]L>6;2
 R3
 R0
 w1714633101
-8/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../../../basicblocks/sequential/convolution_coprocessor_register.v
-F/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../../../basicblocks/sequential/convolution_coprocessor_register.v
-!i122 29
+8/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/basic_blocks/convolution_coprocessor_register.v
+F/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/basic_blocks/convolution_coprocessor_register.v
+!i122 0
 L0 47 28
 R7
 r1
 !s85 0
 31
-R8
-!s107 /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../../../basicblocks/sequential/convolution_coprocessor_register.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../../../basicblocks/sequential|/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../../../basicblocks/sequential/convolution_coprocessor_register.v|
+!s108 1716774384.000000
+!s107 /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/basic_blocks/convolution_coprocessor_register.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/basic_blocks|/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/basic_blocks/convolution_coprocessor_register.v|
 !i113 1
 R11
-!s92 -vlog01compat -work work +incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../../../basicblocks/sequential
+!s92 -vlog01compat -work work +incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/basic_blocks
 R13
 vconvolution_coprocessor_simple_rom_sv
 R14
@@ -354,13 +354,13 @@ R0
 w1714634952
 8/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../basic_blocks/convolution_coprocessor_substractor.sv
 F/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../basic_blocks/convolution_coprocessor_substractor.sv
-!i122 35
+!i122 34
 R18
 R7
 r1
 !s85 0
 31
-Z20 !s108 1716619557.000000
+Z20 !s108 1716774386.000000
 !s107 /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../basic_blocks/convolution_coprocessor_substractor.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../basic_blocks|/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../basic_blocks/convolution_coprocessor_substractor.sv|
 !i113 1
@@ -554,7 +554,7 @@ R0
 w1716617059
 8/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../ipm_ID1000500B.v
 F/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../ipm_ID1000500B.v
-!i122 36
+!i122 35
 L0 4 68
 R7
 r1

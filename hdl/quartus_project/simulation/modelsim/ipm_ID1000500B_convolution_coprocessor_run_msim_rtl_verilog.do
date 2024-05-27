@@ -5,13 +5,13 @@ if {[file exists rtl_work]} {
 vlib rtl_work
 vmap work rtl_work
 
+vlog -vlog01compat -work work +incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/basic_blocks {/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/basic_blocks/convolution_coprocessor_register.v}
 vlog -vlog01compat -work work +incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl {/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/ipm_ID1000500B.v}
 vlog -vlog01compat -work work +incdir+/home/joserodriguez/basicblocks/aip {/home/joserodriguez/basicblocks/aip/aipModules.v}
 vlog -vlog01compat -work work +incdir+/home/joserodriguez/basicblocks/memories {/home/joserodriguez/basicblocks/memories/simple_dual_port_ram_single_clk.v}
 vlog -vlog01compat -work work +incdir+/home/joserodriguez/basicblocks/ipm {/home/joserodriguez/basicblocks/ipm/ipm_register.v}
 vlog -vlog01compat -work work +incdir+/home/joserodriguez/basicblocks/ipm {/home/joserodriguez/basicblocks/ipm/ipm.v}
 vlog -vlog01compat -work work +incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/src {/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/src/ID1000500B_aip.v}
-vlog -vlog01compat -work work +incdir+/home/joserodriguez/basicblocks/sequential {/home/joserodriguez/basicblocks/sequential/convolution_coprocessor_register.v}
 vlog -vlog01compat -work work +incdir+/home/joserodriguez/basicblocks/arithmetic {/home/joserodriguez/basicblocks/arithmetic/convolution_coprocessor_realAdder.v}
 vlog -vlog01compat -work work +incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/src {/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/src/ID1000500B_convolution_coprocessor.v}
 vlog -sv -work work +incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/basic_blocks {/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/basic_blocks/convolution_coprocessor_substractor.sv}
@@ -35,7 +35,6 @@ vlog -vlog01compat -work work +incdir+/home/joserodriguez/ID1000500B_PatricioMor
 vlog -vlog01compat -work work +incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../../../basicblocks/ipm {/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../../../basicblocks/ipm/ipm_register.v}
 vlog -sv -work work +incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../../../basicblocks/memories {/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../../../basicblocks/memories/convolution_coprocessor_simple_rom_sv.sv}
 vlog -vlog01compat -work work +incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../../../basicblocks/memories {/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../../../basicblocks/memories/simple_dual_port_ram_single_clk.v}
-vlog -vlog01compat -work work +incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../../../basicblocks/sequential {/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../../../basicblocks/sequential/convolution_coprocessor_register.v}
 vlog -vlog01compat -work work +incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../../../basicblocks/aip {/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../../../basicblocks/aip/aipModules.v}
 vlog -sv -work work +incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../basic_blocks {/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../basic_blocks/convolution_coprocessor_and.sv}
 vlog -sv -work work +incdir+/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../basic_blocks {/home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/quartus_project/../basic_blocks/convolution_coprocessor_mult.sv}

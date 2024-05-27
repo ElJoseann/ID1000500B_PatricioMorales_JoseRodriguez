@@ -18,7 +18,7 @@ void printSignal(const char* signalName, int *signal, int sizeSignal);
 void create_file(const char* fileName, int* signal, int sizeSignal, int width);
 
 int main(){
-    int sizeY = 25;
+    int sizeY = 10;
     int sizeH = 5;
     int sizeZ = sizeY + sizeH - 1;
     int* y = NULL;
@@ -29,9 +29,6 @@ int main(){
     srand(time(0));
     // Get random signals
     y = get_signal(sizeY);
-    /*for(int i = 0; i < sizeY; i++){
-    	y[i] = i;
-    }*/
     h = (int*) malloc(sizeof(int) * sizeH);
     h[0] = 0x04;
     h[1] = 0x30;

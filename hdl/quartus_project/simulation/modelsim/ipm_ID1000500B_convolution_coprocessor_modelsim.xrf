@@ -1,4 +1,5 @@
 vendor_name = ModelSim
+source_file = 1, /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/basic_blocks/convolution_coprocessor_register.v
 source_file = 1, /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/ipm_ID1000500B.v
 source_file = 1, /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/basic_blocks/convolution_coprocessor_substractor.sv
 source_file = 1, /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/basic_blocks/convolution_coprocessor_not.sv
@@ -10,7 +11,6 @@ source_file = 1, /home/joserodriguez/basicblocks/memories/simple_dual_port_ram_s
 source_file = 1, /home/joserodriguez/basicblocks/ipm/ipm_register.v
 source_file = 1, /home/joserodriguez/basicblocks/ipm/ipm.v
 source_file = 1, /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/src/ID1000500B_aip.v
-source_file = 1, /home/joserodriguez/basicblocks/sequential/convolution_coprocessor_register.v
 source_file = 1, /home/joserodriguez/ID1000500B_PatricioMorales_JoseRodriguez/hdl/simulation/simple_dual_port_ram_single_clk_sv.sv
 source_file = 1, /home/joserodriguez/basicblocks/memories/convolution_coprocessor_simple_rom_sv.sv
 source_file = 1, /home/joserodriguez/basicblocks/arithmetic/convolution_coprocessor_realAdder.v

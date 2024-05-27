@@ -109,6 +109,7 @@ set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to rdMCU
 set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to rst
 set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to rstMCU
 set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to wrMCU
+set_global_assignment -name VERILOG_FILE ../basic_blocks/convolution_coprocessor_register.v
 set_global_assignment -name VERILOG_FILE ../ipm_ID1000500B.v
 set_global_assignment -name SYSTEMVERILOG_FILE ../basic_blocks/convolution_coprocessor_substractor.sv
 set_global_assignment -name SYSTEMVERILOG_FILE ../basic_blocks/convolution_coprocessor_not.sv
@@ -120,7 +121,6 @@ set_global_assignment -name VERILOG_FILE ../../../basicblocks/memories/simple_du
 set_global_assignment -name VERILOG_FILE ../../../basicblocks/ipm/ipm_register.v
 set_global_assignment -name VERILOG_FILE ../../../basicblocks/ipm/ipm.v
 set_global_assignment -name VERILOG_FILE ../src/ID1000500B_aip.v
-set_global_assignment -name VERILOG_FILE ../../../basicblocks/sequential/convolution_coprocessor_register.v
 set_global_assignment -name SYSTEMVERILOG_FILE ../simulation/simple_dual_port_ram_single_clk_sv.sv
 set_global_assignment -name SYSTEMVERILOG_FILE ../../../basicblocks/memories/convolution_coprocessor_simple_rom_sv.sv
 set_global_assignment -name VERILOG_FILE ../../../basicblocks/arithmetic/convolution_coprocessor_realAdder.v
@@ -140,7 +140,6 @@ set_global_assignment -name EDA_TEST_BENCH_FILE ../../../basicblocks/ipm/ipm.v -
 set_global_assignment -name EDA_TEST_BENCH_FILE ../../../basicblocks/ipm/ipm_register.v -section_id ID1000500BTB
 set_global_assignment -name EDA_TEST_BENCH_FILE ../../../basicblocks/memories/convolution_coprocessor_simple_rom_sv.sv -section_id ID1000500BTB
 set_global_assignment -name EDA_TEST_BENCH_FILE ../../../basicblocks/memories/simple_dual_port_ram_single_clk.v -section_id ID1000500BTB
-set_global_assignment -name EDA_TEST_BENCH_FILE ../../../basicblocks/sequential/convolution_coprocessor_register.v -section_id ID1000500BTB
 set_global_assignment -name EDA_TEST_BENCH_FILE ../../../basicblocks/aip/aipModules.v -section_id ID1000500BTB
 set_global_assignment -name EDA_TEST_BENCH_FILE ../basic_blocks/convolution_coprocessor_and.sv -section_id ID1000500BTB
 set_global_assignment -name EDA_TEST_BENCH_FILE ../basic_blocks/convolution_coprocessor_mult.sv -section_id ID1000500BTB
