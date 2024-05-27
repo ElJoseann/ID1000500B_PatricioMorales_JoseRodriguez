@@ -133,6 +133,9 @@ class convoution_coprocessor:
 
     def conv(self, X):
 
+        if(len(X) > 32):
+            logging.info(f"Size of the input memory must be maximum of 32")
+            return None
 
         conv_cop.setSize(len(X))
 
@@ -185,7 +188,7 @@ if __name__=="__main__":
     logging.basicConfig(level=logging.DEBUG)
     connector = '/dev/ttyACM0'
     csv_file = '/home/patricio/Descargas/conv_temp/ID1000500B_config.csv'
-    aip_mem_size = 10
+    aip_mem_size = 31
     addr = 1
     port = 0
 
