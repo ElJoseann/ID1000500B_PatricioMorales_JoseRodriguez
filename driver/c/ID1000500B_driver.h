@@ -1,10 +1,11 @@
-#ifndef __id1000500b_H__
-#define __id1000500b_H__
+#ifndef __ID1000500B_driver_H__
+#define __ID1000500B_driver_H__
 
 #include <stdint.h>
 
 #define SizeH           5
 #define Adjust          1
+#define maxSize         32
 
 /** Global variables declaration (public) */
 /* These variables must be declared "extern" to avoid repetitions. They are defined in the .c file*/
@@ -45,5 +46,5 @@ int32_t id1000500b_waitINT(void);
 /* Finish*/
 int32_t id1000500b_finish(void);
 
-#endif // __id1000500b_H__
+#endif // __ID1000500B_driver_H__
 

@@ -1,4 +1,4 @@
-#include "id1000500b.h"
+#include "ID1000500B_driver.h"
 #include "caip.h"
 #include <stdio.h>
 #include <stdbool.h>
@@ -133,17 +133,24 @@ int32_t id1000500b_waitINT(void)
 /* Execute convolution*/
 uint32_t id1000500b_conv(uint8_t* X, uint8_t size, uint16_t* result){
 
-    uint16_t sizeZ = size+SizeH-Adjust; 
+    uint32_t sizeCast = (uint32_t)size;
+
+    if(sizeCast >= maxSize){
+        printf("\n Size of the input signal must be maximum 32 \n");
+        return -1;
+    }
+
+    uint32_t sizeZ = sizeCast+SizeH-Adjust; 
     
-    id1000500b_setSize(size);
+    id1000500b_setSize(sizeCast);
 
     //Cast to uint32_t
-    uint32_t* Xdata32 = (uint32_t*) malloc(sizeof(uint32_t)*size);
-    for (uint32_t i = 0; i < size; i++){
+    uint32_t* Xdata32 = (uint32_t*) malloc(sizeof(uint32_t)*sizeCast);
+    for (uint32_t i = 0; i < sizeCast; i++){
         Xdata32[i]=(uint32_t)X[i];
     }
 
-    id1000500b_writeData(Xdata32, size);
+    id1000500b_writeData(Xdata32, sizeCast);
 
     id1000500b_startIP();
 

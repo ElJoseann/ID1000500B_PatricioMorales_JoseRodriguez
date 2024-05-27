@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <stdlib.h>
 //#include <conio.h> // getch
-#include "id1000500b.h"
+#include "ID1000500B_driver.h"
 
 void get_convolution(uint8_t* X, uint8_t size, uint16_t* rExpected);
 void compare_results(uint16_t* result, uint8_t size, uint16_t* rExpected);
@@ -11,7 +11,8 @@ int main()
 {
     uint8_t nic_addr  = 1;
     uint8_t port = 0;
-    uint8_t aip_mem_size = 10; //Size of the input and output memories
+    uint8_t aip_mem_size = 10;
+    ; //Size of the input and output memories
 
     id1000500b_init("/dev/ttyACM0", nic_addr, port, "/home/patricio/Descargas/conv_temp/ID1000500B_config.csv");
 
