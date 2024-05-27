@@ -136,7 +136,7 @@ uint32_t id1000500b_conv(uint8_t* X, uint8_t size, uint16_t* result){
     uint32_t sizeCast = (uint32_t)size;
 
     if(sizeCast >= maxSize){
-        printf("\n Size of the input signal must be maximum 32 \n");
+        printf("\n Size of the input signal must be maximum 31 \n");
         return -1;
     }
 
